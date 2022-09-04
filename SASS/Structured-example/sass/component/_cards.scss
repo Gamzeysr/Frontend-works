@@ -1,0 +1,26 @@
+.cards {
+    display: flex;
+    // yanyana getirdik kutuların herbirini 
+    gap: 0.5rem;
+    // kutu aralarında kli boşlukları oluşturduk 
+    padding: 0.8rem;
+    // kutuların içine iç hacim verdik 
+
+    .card1 {
+        @include myBox(green, white);
+    }
+
+    // Burada birinci kutuyu oluşturduk burada backcolor a greeni atadık color a beyaz atadık 
+    .card2 {
+        @include myBox(brown, white)
+    }
+
+    // burada card2 yi olşturduk backcolor dediğimiz fonksiyona bordoyu atadık color a beyaz atadık 
+    .card3 {
+        @include myBox(yellow, white)
+    }
+
+    .card4 {
+        @include myBox(blue, white)
+    }
+}

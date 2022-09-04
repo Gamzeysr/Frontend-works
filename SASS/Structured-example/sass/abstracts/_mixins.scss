@@ -1,0 +1,16 @@
+//!  @MİXİN //
+
+@import "variables";
+// variebles in içindekileri import yaparak almış olduk bu şekilde 
+
+
+
+
+@mixin myBox($backColor, $color) {
+    background-color: $backColor;
+    color: $color;
+    width: 25%;
+    height: 15rem;
+    border: $myBorder;
+    border-radius: 5px;
+}

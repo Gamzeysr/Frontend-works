@@ -1,0 +1,47 @@
+//********HEADER **************//
+
+header {
+    // border: solid red;
+    background-color: $navBgColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // align vererek listeler sayfanın yukarısındaydı ortalamış olduk 
+
+    // display flex vererek yanyana getirik
+    // sonrasındada justfy content space between diyerek Sass ı ve listeyi  köşeye yanaştırdık
+    padding: 1rem;
+
+    img {
+        border: $myBorder;
+        width: 80px;
+        border-radius: 10px;
+    }
+
+    li {
+        display: inline-block;
+        // herbirlisteyi yanyana koyduk 
+        padding: 5px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+    // li:hover {
+    // text-decoration: underline;
+    // } bunu yapmak yerine li nin içine &:hover yazabilirz aynı anlama gelir daha kısa olur
+
+    ul {
+        list-style-type: none;
+        // listenin başındaki noktaları kaldırdık 
+    }
+
+    a {
+        color: $fontColor;
+        text-decoration: none;
+
+
+    }
+}

@@ -1,0 +1,27 @@
+// *********  ARTICLES ****************//
+// bu sefer farklı bir matıgı kullanıcaz @extend mantıgı
+
+//! EXTECD 
+
+.articles {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+
+    .article1 {
+        background-color: grey;
+        width: 50%;
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 10rem;
+        margin-right: 1rem;
+        color: white;
+    }
+
+    .article2 {
+        @extend.article1;
+        // burada article1 classını @extend yaparak burada kullan dedik 
+        // tekrar tekrar yazmak yerine bu şekilde işimizi kolaylaştırmış olduk 
+        background-color: hotpink;
+    }
+}

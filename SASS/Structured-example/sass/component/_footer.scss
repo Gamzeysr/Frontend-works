@@ -1,0 +1,39 @@
+$textColor: #990000, #55004e, #0fa8a1, #121456, #64c217;
+
+footer {
+    .social-icons {
+        display: flex;
+        height: 10rem;
+    }
+
+    @for $i from 1 through 5 {
+        .social#{$i} {
+            width: 20%;
+            background-color: lighten(red, $i * 5);
+            font-size: $i * 1rem;
+            color: nth($textColor, $i );
+        }
+    }
+}
+
+//***************************************************
+//! IF-ELSE
+//****************************************************
+
+$dark: 2;
+
+footer {
+    p {
+        @if $dark ==1 {
+            background-color: grey;
+        }
+
+        @else if $dark ==2 {
+            background-color: lightseagreen;
+        }
+
+        @else {
+            background-color: lawngreen;
+        }
+    }
+}
