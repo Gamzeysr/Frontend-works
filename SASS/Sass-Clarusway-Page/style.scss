@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+//**********************************************************************/
+//* Variable Deglaration
+//*********************************************************************/
+$bgColor: pink;
+$fontSize: 1.2rem;
+$fontColor: white;
+$navBgColor: #30a7c3;
+$fontFamily: 'Segou UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$bannerBgColor: hotpink;
+$myBorder: 1px solid brown;
+
+
+//**********************************************************************/
+//* Variable Usage
+//*********************************************************************/
+body {
+    font-family: $fontFamily;
+    background-color: $bgColor;
+}
+
+//********HEADER **************//
+
+header {
+    // border: solid red;
+    background-color: $navBgColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // align vererek listeler sayfanın yukarısındaydı ortalamış olduk 
+
+    // display flex vererek yanyana getirik
+    // sonrasındada justfy content space between diyerek Sass ı ve listeyi  köşeye yanaştırdık
+    padding: 1rem;
+
+    img {
+        border: $myBorder;
+        width: 80px;
+        border-radius: 10px;
+    }
+
+    li {
+        display: inline-block;
+        // herbirlisteyi yanyana koyduk 
+        padding: 5px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+    // li:hover {
+    // text-decoration: underline;
+    // } bunu yapmak yerine li nin içine &:hover yazabilirz aynı anlama gelir daha kısa olur
+
+    ul {
+        list-style-type: none;
+        // listenin başındaki noktaları kaldırdık 
+    }
+
+    a {
+        color: $fontColor;
+        text-decoration: none;
+
+
+    }
+}
+
+
+//************** BANNER *************//
+
+.banner {
+    display: flex;
+    // border: solid red;
+    justify-content: space-between;
+    align-items: center;
+    // yaziları ortalamak için kullandık 
+    background-color: $bannerBgColor;
+    padding: 1rem;
+    line-height: 2rem;
+    // yaziların aralarını acıyoruz bu şekilde 
+
+    aside {
+        color: white;
+
+        button {
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: none;
+            background-color: $navBgColor;
+            margin-top: 1rem;
+            margin-right: 0.5rem;
+
+            &:hover {
+                background-color: antiquewhite;
+                cursor: pointer;
+            }
+        }
+    }
+
+    img {
+        width: 30%;
+        min-width: 250px;
+        max-width: 400px;
+        // resimin küçüyüp büyümesini sınırladık min-witdh ve max-witdh vererk
+    }
+}
+
+.buttons {
+    margin: 1rem 1rem;
+}
+
+
+//*********** CARDS **********//
+
+//!  @MİXİN //
+
+@mixin myBox($backColor, $color) {
+    background-color: $backColor;
+    color: $color;
+    width: 25%;
+    height: 15rem;
+    border: $myBorder;
+    border-radius: 5px;
+}
+
+// burada fonksiyon oluşltuk asagıda parametreleri deger atayıp çağırmak için
+// sürekli kullanacagımız şeyleri fonksiyon haline getiriyoruz istediğimiz kadar cagırıyoruz
+// lazım olunan her yerde @import ile alabiliriz
+.cards {
+    display: flex;
+    // yanyana getirdik kutuların herbirini 
+    gap: 0.5rem;
+    // kutu aralarında kli boşlukları oluşturduk 
+    padding: 0.8rem;
+    // kutuların içine iç hacim verdik 
+
+    .card1 {
+        @include myBox(green, white);
+    }
+
+    // Burada birinci kutuyu oluşturduk burada backcolor a greeni atadık color a beyaz atadık 
+    .card2 {
+        @include myBox(brown, white)
+    }
+
+    // burada card2 yi olşturduk backcolor dediğimiz fonksiyona bordoyu atadık color a beyaz atadık 
+    .card3 {
+        @include myBox(yellow, white)
+    }
+
+    .card4 {
+        @include myBox(blue, white)
+    }
+}
+
+// *********  ARTICLES ****************//
+// bu sefer farklı bir matıgı kullanıcaz @extend mantıgı
+
+//! EXTECD 
+
+.articles {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+
+    .article1 {
+        background-color: grey;
+        width: 50%;
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 10rem;
+        margin-right: 1rem;
+        color: white;
+    }
+
+    .article2 {
+        @extend.article1;
+        // burada article1 classını @extend yaparak burada kullan dedik 
+        // tekrar tekrar yazmak yerine bu şekilde işimizi kolaylaştırmış olduk 
+        background-color: hotpink;
+    }
+}
+
+//********* FOOTER ***********//
+
+$textColor: #990000, #55004e, #0fa8a1, #121456, #64c217;
+
+footer {
+    .social-icons {
+        display: flex;
+        height: 10rem;
+    }
+
+    @for $i from 1 through 5 {
+        .social#{$i} {
+            width: 20%;
+            background-color: lighten(red, $i * 5);
+            font-size: $i * 1rem;
+            color: nth($textColor, $i );
+        }
+    }
+}
+
+//***************************************************
+//! IF-ELSE
+//****************************************************
+
+$dark: 2;
+
+footer {
+    p {
+        @if $dark ==1 {
+            background-color: grey;
+        }
+
+        @else if $dark ==2 {
+            background-color: lightseagreen;
+        }
+
+        @else {
+            background-color: lawngreen;
+        }
+    }
+}
+
+// Burada if else yapısıyla dedikki yukarıda ilk önce $dark:2 olarak bi değşken tanımladık daha sonra eger dedik yukarıdaki dark değişkenim 1 ise backgroundcolorrengimi grey yap 
+// aeger 2 ye eşitse lightseagreen yap dedik.
+// eger nunlarda değilse o zaman lawngreen yap dedik 

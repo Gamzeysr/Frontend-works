@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segou UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: pink;
+}
+
+header {
+  background-color: #30a7c3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+header img {
+  border: 1px solid brown;
+  width: 80px;
+  border-radius: 10px;
+}
+header li {
+  display: inline-block;
+  padding: 5px;
+}
+header li:hover {
+  text-decoration: underline;
+}
+header ul {
+  list-style-type: none;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hotpink;
+  padding: 1rem;
+  line-height: 2rem;
+}
+.banner aside {
+  color: white;
+}
+.banner aside button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #30a7c3;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+.banner aside button:hover {
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+.banner img {
+  width: 30%;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.buttons {
+  margin: 1rem 1rem;
+}
+
+.cards {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.8rem;
+}
+.cards .card1 {
+  background-color: green;
+  color: white;
+  width: 25%;
+  height: 15rem;
+  border: 1px solid brown;
+  border-radius: 5px;
+}
+.cards .card2 {
+  background-color: brown;
+  color: white;
+  width: 25%;
+  height: 15rem;
+  border: 1px solid brown;
+  border-radius: 5px;
+}
+.cards .card3 {
+  background-color: yellow;
+  color: white;
+  width: 25%;
+  height: 15rem;
+  border: 1px solid brown;
+  border-radius: 5px;
+}
+.cards .card4 {
+  background-color: blue;
+  color: white;
+  width: 25%;
+  height: 15rem;
+  border: 1px solid brown;
+  border-radius: 5px;
+}
+
+.articles {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+.articles .article1, .articles .article2 {
+  background-color: grey;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 10rem;
+  margin-right: 1rem;
+  color: white;
+}
+.articles .article2 {
+  background-color: hotpink;
+}
+
+footer .social-icons {
+  display: flex;
+  height: 10rem;
+}
+footer .social1 {
+  width: 20%;
+  background-color: #ff1a1a;
+  font-size: 1rem;
+  color: #990000;
+}
+footer .social2 {
+  width: 20%;
+  background-color: #ff3333;
+  font-size: 2rem;
+  color: #55004e;
+}
+footer .social3 {
+  width: 20%;
+  background-color: #ff4d4d;
+  font-size: 3rem;
+  color: #0fa8a1;
+}
+footer .social4 {
+  width: 20%;
+  background-color: #ff6666;
+  font-size: 4rem;
+  color: #121456;
+}
+footer .social5 {
+  width: 20%;
+  background-color: #ff8080;
+  font-size: 5rem;
+  color: #64c217;
+}
+
+footer p {
+  background-color: lightseagreen;
+}
+
+/*# sourceMappingURL=style.css.map */
