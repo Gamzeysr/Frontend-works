@@ -1,0 +1,42 @@
+/*************   COMBINASTORS   ***********/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ /* Descendent Selector */
+
+/* .kutu p{ */
+ /* color:red; */
+/* } */
+/*!Burada kutu classın içinde ki bütün p ler in yazı rengini kırmızı yap dedik. */
+
+ /* Child Selector */
+
+/* .kutu > p{ */
+    /* color:green; */
+/* } */
+
+/*!Burada kutu classın daki parent leri aynı olan p leri al dedik. Ve Burada 300 tl olan değişmez çünkü 300tl olanın parenti farklı. */
+      
+/* Adjacent Sibiling */
+
+/* h1 + p{ */
+    /* color:pink; */
+/* } */
+
+/*!Burada h1 etiketi kapandıkdan sonraki  ilk p yi al dedik...h1 etiketinden sonra ki ilk pyi alacak diğer p leri almayacak*/
+
+/*!NOT: Burada en son ki h1 etiketinde ki pink rengi olmaz çünkü etkin değil etkin olması demek en özel olanın rengi geçerli demek.. Burada geçerli olan renk .kutu p{ etiketidir çünkü bu üçünün içinden en özel olanı .kutu p{ dır.*/
+
+     
+     /* general sibling selectör  */
+
+
+    h1 ~ p{
+        color:palevioletred;
+    }
+
+    /*! h1 elementinden sonraki tüm elementleri seçer.*/

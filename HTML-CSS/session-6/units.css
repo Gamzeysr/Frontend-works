@@ -1,0 +1,71 @@
+.abs{
+    background-color: aqua;
+    width: 5cm;
+}
+
+
+
+body{
+    height: 100vh;
+    /* background-color: darkkhaki; */
+}
+html{
+    font-size: 16px;
+    /* buradaki font size bütün remi etkilliyor */
+}
+
+.div2{
+    background-color: brown;
+    /* burada kapsayıcı div e bu rengi verdiğimizden dolayı div 3 de bu renk oldu */
+    width: 50%;
+    height: 50%;
+    
+}
+
+.div3{
+    background-color: yellowgreen;
+    width: 50%;
+    /* % ölçü birimi kapsayıcı dive göre hareket eder */
+    /* ½ de ölçü birimini height vereceğimiz zaman mutlaka bir parentımızın olması lazım  */
+    height: 50vh;
+    /* vh oldugu için sayfaya göre hareket etti  */
+}
+
+.div4{
+    background-color: blueviolet;
+    width: 50vw;
+    /* vw ölçü birimi Kapsayıcı divin içinde olsada kapsayıcı div e göre hareket etmez bütün sayfaya göre hareket eder */
+}
+/* !!!!!div2 ve div3 deki heightler body olmazsa çalışmıyor. 
+Body de vh kullanılması sayfaya göre şekil al demek ama % kullanılsaydı div e göre şekil alacakalrdı divler2,3,4ler */
+
+.div5{
+    font-size: 1em;
+    /* default olarak 16 picseldir */
+}
+.div6{
+    font-size: 2em;
+    /* 16nın 2 katı dır. yani; 32 */
+}
+
+.div7{
+    font-size: 0.5em;
+    /* 32 nin 3 katıdır yani; 96 */
+    /* 0,5 verdiğimde 1 emde ki boyut ile aynı oluyor 1em ile 0.5 in ikisinin de aynı 16 picsel olmasının sebebi 0,5 olan  kapsayıcı divin içinde oldugu için bir üstekinin yarısını alıyor..  */
+} 
+.div8{
+    font-size: 1rem;
+
+}
+.div9{
+    font-size: 2rem;
+
+}
+
+.div10{
+
+
+    font-size: 3rem;
+}
+
+/* !!rem de em gibi default değeride 16 picsel ama sadece bunun emden farkı bunu html içerisinde fontsize yaparak değiştirebiliriz */

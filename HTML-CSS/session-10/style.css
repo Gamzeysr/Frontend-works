@@ -1,0 +1,133 @@
+@import "../session-8/theme.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--ff-dyna);
+    background-color: var(--gri-6);
+    color: var(--siyah-);
+}
+
+h1 {
+
+    background-color: var(--koyu-kirmizi);
+    border: 1px solid black;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 35px;
+    /* text-align: center; */
+    /*! burada text-align: center; calişmaz çünkü borderin içindeki yazıyı ortalar biz kutuyu ortalicaz o yüzden margin ile ortalayabilirz */
+    margin: 1rem auto;
+}
+
+.header {
+    background-color: var(--acik-yesil);
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    color: var(--beyaz);
+    font-size: 2rem;
+}
+
+.navbar {
+    background-color: var(--gri-1);
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: start;
+}
+
+.navbar a {
+    color: var(--beyaz);
+    margin: 1rem;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.navbar a:hover {
+    background-color: var(--gri-7);
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    /*! text aligni her bir kutuların içindeki yazıyı hizalasın dye verdik  */
+    /*! colmun1 column2 column3 column4 e hepsinin parenti burasi  */
+    color: var(--beyaz);
+
+}
+
+.col {
+    padding: 1rem;
+    /*! colmun1 column2 column3 column4 e hespine ortak vereck olduygumu ben col classına verebilirim  */
+
+}
+
+.fs {
+    width: 35%;
+    background-color: var(--gri-1);
+}
+
+.aws {
+    width: 20%;
+    background-color: var(--gri-2);
+}
+
+.data {
+    width: 30%;
+
+    background-color: var(--gri-3);
+}
+
+.cms {
+    width: 15%;
+    background-color: var(--gri-7);
+}
+
+/*! bu aşağıda ki işlemleri sayfa küçüldükçe,büyüdükce farklı şeyler istiyorsak yapıyıruz  */
+@media screen and (min-with: 600px) and (max-width:992px) {
+    body {
+        color: var(--siyah);
+        background-color: var(--acik-kirmizi);
+    }
+
+    .col {
+        width: 50%;
+        /*! buradada col lara sayfa istediğim aralıklarda olunca columların genişliğini %50 yap dedik  */
+        margin: 1rem 0;
+
+    }
+
+}
+
+/*! burasıda asagıdaki normal parantezin içindeki şartlar sağlandıgında geçerli  */
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    body {
+        background-color: var(--mor);
+        color: var(--siyah);
+    }
+
+    .navbar {
+        flex-direction: column;
+        /*! home about contact yaziları alt alta geçsin diye bu şekilde yaptık  */
+        align-items: center;
+        /*! flexbox içindekileri dikeyde hizalamak icin kullanilir.  */
+        /* text-align: center; */
+        /* bu şekildede yazıları ortalayabilriz  */
+    }
+
+    .header {
+        display: none;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+}

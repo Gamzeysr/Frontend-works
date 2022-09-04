@@ -1,0 +1,74 @@
+body{
+font-family: 'Alumni Sans Collegiate One', sans-serif;
+font-family: 'Alumni Sans Inline One', cursive;
+font-family: 'Dosis', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Sorts Mill Goudy', serif;
+
+}
+
+html{
+    font-size: 20px;
+    /*! buradan defaultu asıl 16 px yani 1 rem 16 px aslında bunu unutma ve ben eger sayfamın içindeki herşeyle buradaki kısımla bir şey vererek hepsine etki edebilirim */
+}
+
+nav.yatay-menu a {
+    text-decoration: none;
+    color:black
+    /* normal de ki linkin yazısını siyah yaptık */
+}
+
+nav.yatay-menu ul{
+    list-style-type:none;
+    text-align: center;
+}
+/*! ul ye verdik list-style-type i çünkü a ya verseydik görmezdi */
+
+nav.yatay-menu ul li{
+    display:inline-block;
+    background-color: wheat;
+    padding: 1rem 2rem;
+    /* padding i yatay ve dikey eksende verdik */
+    margin-right: 2rem;
+    /* kutuları sayfa büyüdükçe sağdan sola doğru açılmasını sağladık bu margin right vererel */
+    width: 4rem;
+    /* margin-bottom: 1rem; */
+    margin-bottom: 2rem;
+    /* margin bottom vereverek kutular sayfa küçüldğkçe aşağıdan yukarıdan doğru ahreket etcekler */
+    border-radius: 20px;
+    
+}
+nav.yatay-menu ul li:hover{
+    background-color: tomato;
+    color: white;
+    /*! linkin içerisinde bi yazı elementi olmadıgı için kutuda ki yazıya white vermemiz etkilemiyor, etkilemesi için ayrıca a ya color vermemiz lazım */
+}
+
+nav.yatay-menu ul li a:hover{
+    color: white;
+}
+
+/******** ACILIR MENU ********/
+nav.acilir-menu {
+    border: 1px solid red;
+    width: 10rem;
+}
+
+
+nav.acilir-menu ul{
+    display: none;
+    list-style-type:none;
+    /*! burada listemi görünmez yaptım  */
+}
+
+nav.acilir-menu .fa-bars:active{
+    opacity:0.5;
+    
+    /*! çizgi çizgi olan şeyi tıklanınca opac yap dedik */
+}
+
+nav.acilir-menu:hover ul{
+    display: block;
+    /*! bu şekilde listeyi görünür yaptık */
+}

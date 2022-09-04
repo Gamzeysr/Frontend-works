@@ -1,0 +1,38 @@
+.box1{
+    /* background-color: aquamarine; */
+    background-color: #00ff00;
+
+}
+
+.box2{
+    /* background-color: tomato; */
+    background-color: #ff0000;
+}
+
+.box3{
+    background-color: bisque;
+}
+
+.box4{
+  background-color: chartreuse;
+
+}
+
+
+.box5{
+    /* background-color: crimson;s */
+    /* background-color: rgb(255,0,0,0.5); */
+    background-color: hsl(100, 3 0%, 50%);
+
+
+}
+
+
+
+
+
+
+
+
+
+ 

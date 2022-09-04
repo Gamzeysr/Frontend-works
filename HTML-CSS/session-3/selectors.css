@@ -1,0 +1,39 @@
+/* Grup Seçiciler */
+
+div{
+    border: 2px solid red;
+} 
+/* yukaruda bütün divleri kırmızı içine almış olduk bu şekilde yaparak */
+
+div p{
+    border: 2px solid blue;
+}
+
+/* div p de divin içindeki tüm paragrafları seçti */
+
+.container div p {
+    background-color: chocolate;
+}
+/* containerin daki divin içindeki p yi boya dedik buradada */
+
+p + div {
+    background-color: aquamarine;
+}
+/* p den sonra gelen div varsa demek */
+
+p[title="baslik1"]{
+    background-color: brown;
+}
+
+p[title="baslik2"]{
+    background-color: darkblue;
+}
+
+p::first-letter{
+    font-size: 2rem;
+}
+
+p::first-line{
+    font-style: italic;
+    font-weight: bold;
+}

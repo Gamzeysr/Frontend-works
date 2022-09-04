@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /*! şuanda 12 eşit parçaya böldük 1fr lik sayfamızı  */
+    grid-template-rows: 200px 20vh calc(100vh - (200px + 20vh + 10vh)) 10vh;
+
+    /*! ilk 200px i headerimıza verdik, 20 vh navımıza verdik, 10vh da footer kısmına verdik... calc() dedğimiz kısım main kısmı ve 100 vh den tamamını çıkartmalıyız ki bize main in alanını versin   */
+}
+
+.content {
+    /*! ortak olan kısım burası otak olan ne varsa burada şlem yapıyoruz  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+
+.header {
+    background-image: url(https://cdn.pixabay.com/photo/2016/05/11/13/20/keyboard-1385706_960_720.jpg);
+    grid-column: span 12;
+    /*! burada grid column span 12 dememin sebebi bütün sayfayı sola doğru yani  12brlik bütün columnlari kaplasın diye bunu yazmazsak eğer resim ilk column da kalırdı */
+    background-size: cover;
+    background-position: center;
+
+}
+
+nav {
+    /*! şuan nav kısmına özel işlem yapıyoruz  */
+    background-color: aqua;
+    grid-column: span 12;
+
+}
+
+aside {
+    background-color: blanchedalmond;
+    grid-column: span 3;
+    /*! burada asiden kapladıgı alanı hesapladık  */
+
+}
+
+main {
+    background-color: coral;
+    grid-column: span 9;
+    /*! yukarıdakini 3 verince gerisye 9 kaldı direk onu yazdım burada da  */
+}
+
+footer {
+    background-color: aqua;
+    grid-column: span 12;
+
+}

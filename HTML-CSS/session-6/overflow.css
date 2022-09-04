@@ -1,0 +1,35 @@
+.box{
+    border:5px solid black;
+    margin-bottom: 4rem;
+    width: 20rem;
+    height: 4rem;
+    background-color: bisque;
+}
+
+.box1{
+    overflow:visible;
+    /* default olarak kabul ediliyor ve bir şey değiştirmiyor*/
+
+}
+
+.box2{
+    overflow: hidden;
+    /* kutunun dışında taşan herşeyi saklıyor */
+
+}
+
+.box3{
+    overflow: scroll;
+
+}
+
+.box4{
+    overflow: auto;
+    /* kutunun içindeki kısa şeyler auto kullanırsak daha iyi yoksa bu şekilde kısa şeylerde bile scroll verirsek hoş görünmüyor auto eger kutunun içinde kş küçük yazı ve resimse yan daki kutu5 gibi görünüyor. */
+
+}
+
+.box5{
+    overflow: auto;
+
+}

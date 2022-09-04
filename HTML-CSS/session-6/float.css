@@ -1,0 +1,44 @@
+.img-float{
+    width: 40%;
+    float:left;
+    /* float left yaparak paragrafı resmin yanına getirmiş olduk  */
+    float: right;
+    /* resim background-color un içine otursun diye bı şekilde yaptık */
+    /* margin-right: 10px; */
+    /* paragrafı sağa doğru götürdük  */
+}
+
+.par1{
+    background-color: crimson;
+    text-align: justify;
+}
+
+.box{
+    float: left;
+    font-size: 2rem;
+}
+.clears{
+    clear: both;
+    /* bu şekilde ikinci paragrafın yazısını aşağıya almış olduk */
+}
+.box1{
+    background-color: goldenrod;
+  /* float: left; */
+  width: 33%;
+}
+
+.box2{
+    background-color: aquamarine;
+ /* float: left; */
+ width: 13%;
+}
+
+.box3{
+    background-color: crimson;
+  /* float: left; */
+  width: 13%;
+}
+
+.clear2{
+    clear: both;
+}

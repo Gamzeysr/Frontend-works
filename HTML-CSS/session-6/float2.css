@@ -1,0 +1,39 @@
+*{
+    border:2px solid salmon;
+    text-align: center;
+    border-radius: 10px;
+}
+
+header{
+    background-color: seagreen;
+    margin-top: 20px;
+    /* marginle headerla body arasını açtım   */
+}
+
+main{
+    background-color: rgb(184, 14, 107);
+    padding: 5px;
+    /* aside ve article in arkadtarafı olmuş oluyor */
+    
+}
+aside{
+   background-color: chocolate;
+   width: 25%;
+   height: 300px ;
+   float: left;
+}
+
+article{
+    background-color: cornflowerblue;
+    width: 70%;
+    height: 300px;
+    float: left;
+}
+
+footer{
+    background-color: chartreuse;
+}
+.clear{
+    clear: both;
+    
+}

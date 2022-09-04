@@ -1,0 +1,56 @@
+body{
+    background-color: orange;
+}
+
+
+h2{
+    text-align: center;
+}
+
+
+#par1{
+ color: blue;
+ text-align: center;
+ direction: rtl;
+ unicode-bidi: bidi-override;
+ text-shadow: 3px 3px 5px red;
+
+
+ /* arapça yazısını sağdan sola okundugu için sağdan sola aldırıyoruz yazıyı okunabilmesi için */
+}
+
+#par2{
+    color:rgba(255,0,0,1);
+    column-count: 3;
+    column-rule: 3px solid black;
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-family: 'Lobster', cursive;
+
+
+}
+
+#par3{
+    color: #85f485;
+    text-align: right;
+
+}
+
+#par4{
+    color: hsl(0, 100%, 50%);
+    text-align: justify; 
+ /* justify ortalıyor */
+ text-decoration: line-through;
+}
+
+#par5{
+
+    color: blueviolet;
+    text-align: left;
+    text-decoration:overline wavy orange;
+}
+#span1{
+    color: cornflowerblue;
+    text-align:start;
+}
+
+

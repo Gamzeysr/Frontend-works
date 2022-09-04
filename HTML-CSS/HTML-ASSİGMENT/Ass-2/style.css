@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(60deg, rgba(12, 200, 80, 0.3),
+            rgba(0, 112, 192, 1));
+}
+
+
+.container {
+    /* background-color: cornflowerblue; */
+    background-image: linear-gradient(60deg, yellow, violet, yellow);
+    margin: 1rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    padding-right: 5px;
+    width: 80%;
+    margin: 30px auto;
+
+
+
+}
+
+.logo {
+    justify-content: flex-start;
+    padding: 0.5rem;
+    width: 35%;
+}
+
+.logo :hover {
+    transform: scale(1.5, 1);
+
+}
+
+
+.logos {
+    display: flex;
+    justify-content: flex-end;
+    width: 35%;
+    /*! genişliğini birbirine değmesin bozulmasın aradaki mesafeler diye verdik bu ksım logoslar için geçerli */
+}
+
+.logos i {
+    margin: 1px 2px;
+    /* border: 1px solid red; */
+
+}
+
+.logos i:hover {
+    transform: scale(1.5, 1);
+}
+
+
+.lists {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    /* border: 1px solid red; */
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    width: 30%;
+    /*! genişliğini birbirine değmesin bozulmasın aradaki mesafeler diye verdik bu ksım listsler  için geçerli ortadaki yazılar için */
+    min-width: 100px;
+    /*! ortadaki yazıların en fazla genişliğipx olsun ondan sonra artık genişlemesin diye vermiyoru sınırlandırıyoruz */
+
+}
+
+.lists a {
+    text-decoration: none;
+    margin: 1px 10px;
+    /*! her bir yazıyı ayrı ayrı uyguladıgımız için burada list a diyoruz dikkat et lists de yapsaydım bu text decorationu kımıldamazlardı  */
+    border: 1px solid mediumaquamarine;
+    border-radius: 30%;
+    background-color: hotpink;
+    color: blanchedalmond;
+    padding: 2px;
+}
+
+.lists a:hover {
+    background-color: cornflowerblue;
+    transform: scale(1.5, 1);
+}

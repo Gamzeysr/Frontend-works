@@ -1,0 +1,36 @@
+a{
+    background-color: rgb(23, 219, 105);
+    display: block;
+    /* clarusway yazısı inline dı display: block yaparak ; clarusway linkini block element yaptık */
+    padding: 10px;
+}
+span{
+    background-color: orange;
+    margin: 10px;
+    /* inline elementlerde margin soldan sağa yer ama yukarıdan aşağı yemez */
+    padding: 20px;
+    /* inline elementlerde padding kullanılmaz burada da kullanınca taşma yaptıgını görüyoruz */
+    display: block;
+    /* burada inline i block element yaptıgımız için artık marjini yer */
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: darkorchid;
+    border: 2px solid red;
+    margin-top: 5px;
+    /* margin topla kutuları birbirinden uzaklaştırdık */
+    display: inline;
+    /* bunu yapınca kutular yanyana geliyor çünnkü display: inline ; da width ve height veremiyoruz 
+    ve sadece margin verdiğimizde sağdan ve soldan yer*/
+    display: inline-block;
+    /* bu şekilde genişlik ve yükseklik verebiliyoruz hem inline oluyor */
+    
+}
+#box2{
+    background-color: darkgoldenrod;
+    /* display: none; */
+    /* display none verince box2 yok oldu ama visibilitiy-hidden verseydik o zaman yok olurdu ama yeri kaybolmazdı */
+    visibility: hidden;
+}

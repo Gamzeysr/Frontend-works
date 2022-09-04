@@ -1,0 +1,38 @@
+.container{
+    background-color: aqua;
+    
+
+
+}
+
+.div1{
+    background-color: bisque;
+    width: 150px;
+    height: 150px;
+
+
+}
+
+
+.div2{
+    box-sizing: border-box;
+    background-color: brown;
+    width: 150px;
+    height: 150px;
+    border: 3px solid blue;
+    /* margin: 10px ; */
+    padding: 20px;
+
+
+}
+
+
+.div3{
+    box-sizing: border-box;
+    background-color: blueviolet;
+    width: 150px;
+    height: 150px;
+    border: solid red;
+    padding: 30px;
+    
+}

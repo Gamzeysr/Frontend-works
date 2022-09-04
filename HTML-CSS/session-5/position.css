@@ -1,0 +1,54 @@
+.main{
+    width: 100%;
+    background-color: rgb(87, 227, 227);
+    height: 1000px;
+    margin: 30px;
+    padding: 5px;
+    /* position: relative; */
+    /* top: 20px; */
+    /* left: 30px; */
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: magenta;
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: darkorange;
+    /* position: static; */
+    /* position: static hiç bir şeyin değerini değiştirmez */
+    /* position: relative; */
+    /* top: 20px; */
+    /* left: 30px; */
+        
+    /* position: relative de tek başına hiç bir anlam ifade etmez illaki top :20px, left 30px gibi şeyler vermem lazım  */
+}
+
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+    /* position: absolute; */
+    top: 50px;
+    left: 20px;
+    /* buradaki absolute en yakın relative e göre çalışıypr */
+
+}
+
+#icerde{
+    background-color: blueviolet;
+    width: 50px;
+    height: 30px;
+    color: yellow;
+    font-size: .6rem;
+    /* font size mor divin içindeki yazıyı ona göre ele alıyor */
+    position: absolute;
+    bottom:0;
+    right: 0;
+    /* buradaki absolute en yakin box kutusunda ki relative e göre şekil aldı */
+
+}

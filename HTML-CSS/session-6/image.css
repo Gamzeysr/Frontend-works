@@ -1,0 +1,49 @@
+.container{
+    border: solid red;
+    width: 20rem;
+    height: 20rem;
+    background-image: url(./Ekran\ görüntüsü\ 2022-08-16\ 163935.png);
+    background-repeat: no-repeat;
+    /* resmimizin tekrar etmesini engelliyoruz bunu diyerek */
+    background-position: center;
+    /* resmi ortalıyor */
+    background-size: cover;
+    background-size:contain;
+    /* fotografın boyunu uzunlamasına old için sağ ve soldan boşluk bıraktı ama eğer fotoğrafın defaultu kare olsaydı yukarıdan aşağıdan boşluk bırskırdı*/
+    overflow: auto;
+    color: yellow;
+    /* opacity: 0.5; */
+    /* opacity bulundugumuz containeri şeffaf yapabiliriz */
+    /* opacity içindeki tüm kodları şeffaflaştırıken,transparan sadece renkleri şeffaflaştırıyor unutma!!! */
+    
+}
+
+#paragraf{
+    opacity: 0.6;
+    /* burada da sadece rengi seffaflaştırdık :) parafrafa id verdik sonrasında css tarafında opacity:  i kullandık; */
+}
+
+img{
+    width: 30%;
+    /* fotoğrafların yan yana gelmesini sağladık  */
+}
+#img1{
+    opacity: 0.5;
+}
+#img1:hover{
+    opacity: 1;
+}
+#img2{
+    opacity:0.5;
+}
+#img2:hover{
+    opacity: 1;
+}
+
+#img3{
+opacity: 0.5;
+}
+
+#img3:hover{
+    opacity: 1;
+}

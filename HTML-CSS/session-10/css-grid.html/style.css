@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 1rem;
+    text-align: center;
+    /* yıldıza verdiğim için bütüğn yaziları ortaladım  */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 40vw 20rem;
+    /*! burada sırasıyla 200px, 40vw ve 20rem'lik 3 adet sütun tanımladık */
+    grid-template-rows: 100px 300px 20vh 4rem;
+    /*! burada sırasıyla 100px 300px 20vh 4rem'lik yüksekliğe sahip 4 ader satur tanımladık  */
+
+    justify-content: center;
+    /*! bütün kareleri ortalamak için justy-conten center kodunu burya ana containerimiza verdik  */
+}
+
+.content {
+    /*! ortak klasımız  */
+    background-color: bisque;
+    border: 2px solid black;
+
+
+    /*! Grid Container içerisindeki itemlere flex özelliği kazanrılabilir.Böylece itemlerin içerisinde ki contentlerin yatay ve dikey hizalamasi yapılabilir  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*' bu content7 e özel resim vermek istiyoruz diyelim  */
+.content7 {
+    background-image: url(https://i.pinimg.com/236x/87/5c/99/875c995502147b13c180f3fbd6d16d51--rescue-dogs-bestfriends.jpg);
+    background-size: cover;
+    /*! cover dediğimiz için resmi kapsamaya çalışıyor  */
+    background-position: center;
+    /*! resmi ortalattıyoruz  */
+}
+
+.content5 {
+    background-color: aquamarine;
+}

@@ -1,0 +1,31 @@
+
+body{
+    padding: 50px;
+    /* border: 1px solid red; */
+}
+
+
+
+
+
+a{
+    /* border: 1px solid red; */
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: pink;
+    border-radius: 20px;
+}
+
+a:hover{
+    background-color: cadetblue;
+    color: black;
+}
+
+a:visited{
+    color: red;
+}
+
+a:active{
+    background-color: coral;
+}

@@ -1,0 +1,161 @@
+/***** JUSTİFY-CONTENT yatay hizalama *****/
+/* x ekseninde hizalama yapar yani yatay olarak hizalama yapar*/
+
+
+.container {
+    display: flex;
+    /* flex-direction: column; */
+    /*! elemanları yan yana dizer */
+    /*! elemanların diziliş yönü :column,row,row-reverse,column-reverse default değeri rowdur :)*/
+    background-color: fuchsia;
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /*! bu kod da her birdiv  alt satıra iniyor sayfa küçüldükçe, sayfa büyüdükçede yukarı satıra çıkıyor aynı flex-direction:row daki gibi ama burada sırayla gitmiyor karışık iniyor, çıkkıyor */
+    /* flex-direction: column-reverse; */
+    /*! bundanda aşağı doğru sıralanırken sırasız bir şekide aşağı doğru şek,il alıyor  */
+    flex-wrap: wrap;
+    /*! her bir divin içindeki itemları alt satıra geçirebilme özelliği var  */
+    /* flex-wrap: nowrap; */
+    /*! bu kod da elementlerin hepsini tek bir satırda sıkıştırıyor */
+    overflow: auto;
+    /*! dışa taşmama için bu komutu kullanabiliriz  */
+
+
+
+    /*****  YATAY HİZALAMA JUSTİFY-CONTENT *****/
+
+    /* justify-content: center; */
+    /*! bu komutu kutuları containerin içindeki divlerin herbirini ortalayalım diye yaptık */
+    /* justify-content: flex-end; */
+    /*! bu komutu kutuları containerin içindeki divlerin her birini satır sonuna yaslayalım diye kullandık  */
+    /* justify-content: space-between; */
+    /*! bu komutu kutuları containerin içindeki divleri sağında ki ve solundakileri otomatik marjin veya padding verip kalan boşlugu hızalayp eşit aralıklara koyuyor */
+    /* justify-content: space-around; */
+    /* !sağdan soldan elementleri space-between e göre biraz daha fazla boşluk bırakıyor  */
+    justify-content: space-evenly;
+    /*! tüm boşlukları eşit olarak ayarlıyor */
+    gap: 10px 30px;
+    /*! burada 10px olan yer yan yana olan boşlukları ayarlıyor, 30 px de aşağı doğru yani columnları ayarlıyor  */
+}
+
+.container div {
+    /*! burada her bir div e ayrı ayrı işlem yapıyoruz */
+    background-color: chartreuse;
+    width: 5rem;
+    height: 5rem;
+    /* margin: 1rem; */
+
+
+}
+
+/***** ALİGN-İTEMS DİKEY SIRALAMALAR *****/
+/* y eksininde hizalama yapar dikeyde hizalama yapar*/
+
+.container1 {
+    height: 20rem;
+    /*! dikey sıralamalarda height önemli burayı silersek yani heigthi olmazsa içindekilerin hacmi kadar yüksekliği olur genişliği olur  */
+    background-color: cyan;
+    display: flex;
+    align-items: stretch;
+    gap: 20px 10px;
+    padding: 0.5rem;
+    justify-content: center;
+    /*! elementleri yanyana hizalamak için kullandık normal koşullarda justify lar x  */
+    /* flex-direction: row; */
+    /* align-items: flex-end; */
+    /* elementleri tabana sıralar */
+    /* align-items: center; */
+    /* elementleri ortaya hizalar  */
+    /* align-items: stretch; */
+    /* align items stretch in çalışması için height i devre dışı bırakcaz, height e uzunluk verdiğimiz için uzulugu görüp çalışmıyor  */
+    /*! align item jusendflex-ende göre sekil alıyor dikkat et  */
+
+    /*! Çok satırlı verilerin dikeyde hizalanmasi için kullanılır. flex-wrap: wrap modu  */
+    flex-wrap: wrap;
+    /*! sığmayanlar aşağı atılacak  */
+    overflow: auto;
+    /* elementlerim sayfa küçüldükçe dışarı taşmasın diye overflow verdik  */
+    align-content: flex-end;
+    /*! bu align content elementlerin hepsine bir müsadahale yapıyor , gereksiz boşluğu kaldırıyor*/
+}
+
+.container1 div {
+    background-color: crimson;
+    width: 5rem;
+    height: 5rem;
+}
+
+/*******   FLEX-GROW   *******/
+
+.container2 {
+    background-color: darkgoldenrod;
+    display: flex;
+    /*! tek bir row da diziyor elementleri  */
+    flex-wrap: nowrap;
+    justify-content: center;
+    /*! elementleri ortaladık  */
+    gap: 1rem;
+    /*! elementlerin arasını açtık  */
+    padding: 0.5rem;
+}
+
+.container2 div {
+    background-color: khaki;
+    width: 5rem;
+    flex-grow: 1;
+    /*! hepsini 1 lik olrak büyüttük flex grow vererek */
+    /*? diyelim ki ben 2 numaralıyı buyultmek istiyorum o zaman 2 nin classına gidp onu diğerlerine göre sayfa büyüdükçe o diğerlerinden büyük kalsın diye ayarlama yapabilirim  */
+    /* flex-basis: auto; */
+    /*! ihtiyacı olana ihtiyacı kadar yer veriyor elementlere autodayken*/
+    flex-basis: 0;
+    /*! ihtiyacı kadar yer tahsis ediyor veya sadece içeriğin buyuklugu adar bir uzunluk veriyor (flex-basis:0)  */
+}
+
+div.grow2 {
+    flex-grow: 4;
+    /*! bu durumda artık sayfa büyüdükçe2 numaralı olan artık diğerlerinden farklı olacaak  bu durum sayfa da yer oldugu müddetce geçerlidir*/
+}
+
+
+div.grow3 {
+    flex-grow: 7;
+}
+
+div.nogrow {
+    flex-grow: 0;
+    /*! 4 numaralıyı sabitlemiş olduk  */
+}
+
+/***** FLEX-GROW U WİTHLERLE MARGİNLERLE YAPMA *******/
+
+.container3 {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.container3 div {
+    background-color: bisque;
+
+}
+
+div.div1 {
+    width: 10%;
+}
+
+div.div2 {
+    width: 20%;
+}
+
+div.div3 {
+    width: 30%;
+}
+
+div.div4 {
+    width: 40%;
+}
+
+/* ? bu dört divmiş eşit bölmek şstersem 4 tane divm oldugundan hepsine ayrı ayrı %25 verince aynı hizaya getirmiş olurum :) 3 tane olsaydı yüzde 33 olurdu bu şekilde devam ederr :) */

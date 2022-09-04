@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /*! yazıların hepsi ortada gözüksğn diye buraya verdik  */
+    font-weight: 5rem;
+    color: aliceblue;
+    font-size: small;
+}
+
+.container {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.333333%;
+}
+
+.col-2 {
+    width: 16.666667%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.333333%;
+}
+
+.col-5 {
+    width: 41.666667%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.333333%;
+}
+
+.col-8 {
+    width: 66.666667%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.333333%;
+}
+
+.col-11 {
+    width: 91.666667%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+.logo {
+    background-color: crimson;
+    padding: 1rem;
+
+}
+
+.menu {
+    background-color: chartreuse;
+    padding: 1rem;
+}
+
+.Banner {
+    background-color: aqua;
+    padding: 2rem;
+
+}
+
+.part {
+    /*! buradakiler bölüm 1 bölüm 2 bölüm 3 dekilere hepsine ortak verilenler  */
+    background-color: coral;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 22rem);
+}
+
+.parter {
+    background-color: darkkhaki;
+    height: calc(20vh - 5rem);
+    border: 1px solid black;
+    padding: 1rem;
+
+}
+
+.col-12,
+.footer {
+    background-color: deeppink;
+    padding: 3.5rem;
+}

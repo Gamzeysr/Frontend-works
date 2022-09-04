@@ -1,0 +1,52 @@
+caption{
+    font-weight: 900;
+    /* captionun kalınlığını ayaarladım. */
+    border: 2px solid black;
+    margin-bottom: 10px;
+    /* bu komudu vererek Clarusway List yazsını Tablo başlıklarından ayırmış olduk */
+}
+
+table,th,td{
+    border:1px solid black;
+    border-collapse:collapse;
+    /* bu komut ilede çift çizgileri birleştirip tek yaptık  */
+
+}
+table{
+    width: 100%;
+    /* Bu şekilde tablomu komple genişlettim */
+}
+th{
+    height: 30px;
+    /* Başlık kısmını genişlettim */
+    /* vertical-align: top; */
+    /* başlıklarımı dikeyine yukarı çıkarırım  */
+    vertical-align: bottom;
+    /* başlıklarımı aşağıya indiririm */
+    padding: 10px;
+    /* başlıklarımı biraz açtım  */
+    background-color:cornflowerblue;
+    color: antiquewhite;
+}
+td{
+    height: 25px;
+    /* td dekilere yani başlık altındaki yazıların her birini aşapı doğru genişlettik */
+}
+td:hover{
+    background-color: rgb(97, 18, 150);
+}
+
+tr:nth-child(even){
+    /* tr:nth-child even diyerek atlatarak vermiş olduk renkleri */
+    background-color:coral; 
+    color: blue;
+}
+
+#ifade{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuEbIn3--ZnQZjEk7jzjjXZyWv_FKdcY6-Dw&usqp=CAU);
+    width: 250px;
+    height: 50px;
+}
+
+
+j

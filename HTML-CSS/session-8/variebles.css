@@ -1,0 +1,29 @@
+@import "theme.css";
+/*! Burada @import "theme.css"; diyerek theme sayfamı çağırdım theme sayfamdaki atamış oldugum değerleri burada kullanıcam artık :)  */
+
+
+
+body {
+    font-family: var(--ff-dyna);
+}
+
+h1 {
+    color: var(--mor);
+
+
+}
+
+div {
+    box-shadow: var(--koyu-golge);
+    width: 50vw;
+    /*! vw ölçü birimi kapsayıcı div i olsa bile sayfaya göre sekil alıyor unutma  */
+    margin: 1rem 2rem;
+    max-width: 500px;
+    min-width: 400px;
+    /*! max with ve min with i divim sayfa büyüdükce yada kücüldükce en az 400 kadar kücülsün en fazla 500px kadar büysün dedik bu sekilde yaparak */
+}
+
+p {
+    background-color: var(--acik-kirmizi);
+    color: var(--mor);
+}

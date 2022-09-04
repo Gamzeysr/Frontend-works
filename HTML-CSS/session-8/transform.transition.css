@@ -1,0 +1,125 @@
+.yazi {
+    text-align: center;
+    /*! içindeki yaziları otaladı */
+    font-size: 2rem;
+    margin: 2rem auto;
+    /*! aralarını açmak için margin 2rem kullandık ,
+    /*! autoda verince sağdan soldan ortaladı width: 50vw; */
+    width: 50vw;
+    /*!rotateler , scalex lar div imn içinde old için ve div de vbi block element old
+    /*? vw sayfaya göre genişlik veriyor, div e göre değil unutma!!! */
+}
+
+/******* ROTATE ********/
+
+.yazi1 {
+    background-color: greenyellow;
+    transform: rotateX(180deg);
+    /*! 90 ve 270 derecelerde yazilar tam dik olduklarından ve 3-boyutlu olarak bakam
+}
+
+.yazi2 {
+    background-color: tomato;
+    
+    transform: rotateY(180deg);
+}
+
+.yazi3 {
+    background-color: hotpink;
+    transform: rotate(45deg);
+}
+
+/******** SCALE **********/
+
+    .yazi4 {
+        background-color: indianred;
+
+        /* transform: scaleX(5); */
+    }
+
+    .yazi4:hover {
+        transform: scaleX(2);
+        /*! x eksenine göre genişletiyor */
+    }
+
+    .yazi5 {
+        background-color: blueviolet;
+        /* transform: scaleY(2); */
+    }
+
+    .yazi5:hover {
+        transform: scaleY(2);
+        /*! y eksenine göre yükseltiyor */
+
+    }
+
+    .yazi6 {
+        background-color: blue;
+
+    }
+
+    .yazi6:hover {
+        transform: scale(2, 3);
+
+        /*! x yönüne doğru genişletip hem  y eksenine doğru genişletiyr ikisinide yapıyor
+}
+
+
+/******* TRANSLATE - TRANSITION ********/
+        .translate {
+            background-color: yellow;
+            font-size: 1.1rem;
+            font-weight: 800;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            /* transition: color 1s; */
+            /*! Burada 1s liğine yazının rengini değiştiriyorum  */
+            /* transition: background-color 1s, transform 1s; */
+            /*! Burada 1s liğine arka plan rengini değiştiriyorum */
+            transition: all 1s;
+            /*!  burada hepsine dokunuş yaptık */
+        }
+
+        .x:hover {
+            transform: translateX(150px);
+            background-color: coral;
+
+        }
+
+        .y:active {
+            transform: translateY(50px);
+            background-color: tomato;
+        }
+
+        .xy:hover {
+            transform: translate(50px, 20px);
+            background-color: fuchsia;
+        }
+
+        .btn-div {
+            text-align: center;
+            /*! taşıyıcı div e verdiğimizde hizalandı */
+        }
+
+        .btn {
+            padding: 0.5rem;
+            width: 5rem;
+            background-color: goldenrod;
+            border: none;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            transition: background-color 1s, color 0.5s;
+            font-weight: 800;
+
+        }
+
+        .btn:hover {
+            background-color: gray;
+            color: white;
+        }
+
+        .btn:active {
+
+            transform: scale(95%);
+        }

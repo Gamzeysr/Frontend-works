@@ -1,0 +1,68 @@
+ul{
+    /* padding-left: 5px; */
+   /* list-style-type: none; */
+}
+
+
+
+
+.item{
+    /* list-style-type: georgian; */
+    /* item lerin başındaki noktaları gürcü alfabesine çevirdi */
+    /* list-style-type: inside; */
+    /* itemlerin başındakileri içeriye doğru alıyor */
+    /* list-style-type: outside; */
+    /* list-style-type: "✌"; */
+    /* itemlerin başında emoji çıkmasını sağladık */
+    /* list-style-type: "\2764"; */
+    /* bu şekilde kod olarakda listenin başına ifade koyabiliyoruz */
+    /* list-style-image: url("") ; */
+    /* buradada resim ekleniyor */
+}
+
+/* li::before{ */
+    /* content:"\2764"; */
+    /* contentimin yani yazının başına \2764 kodlu ifaedeyi koy dedim bu şekilde */
+    /* color: tomato; */
+    /* padding-right: 15px; */
+    /* padding bu şekilde yaparak kalp ile yazının arasındaki mesafeyi açmış olduk */
+    /* border:solid red; */
+/* } */
+
+
+ol{
+    list-style-type: none;
+    /* sıralı liste oldugu için başşındaki yazıları kaldırdım */
+    margin:5px;
+    padding: 5px;
+    /* margin ve padding vererek biraz daha sola doğru aldım bu beş loremi de sıralı liste şeklinde hepsini sola doğru almış oldum. */
+}
+
+ol li{
+    background-color: cornflowerblue;
+    border: 1px solid orange;
+    border-radius: 25px;
+    /* ovalleştirdik borderi */
+    padding-left: 1rem;
+    /* borderlerin arasındaki yazıyı oynattık padding left vermeseydik eğer yazılar default olarak solda kayuık dururdu */
+    width: 15rem;
+    /* width i verince borderlarda kısalma oldu */
+    margin: 10px;
+    /* borderların aralarını açtık */
+}
+
+ol li:hover{
+    background-color: gray;
+    /* borderimin arka kısmını mouse gelince yanıp sönerli yaptım. */
+    color: lightgreen;
+    /* yazı rengisini değiştirdim */
+    border-left: 7px solid lightcoral;
+    /* bu da yazının başındaki pembe renk veriyor */
+    cursor: pointer;
+
+}
+ /* li hover içindeki işlemler, verdiğimiz kodlar hepsi mouesun üstüne gelince bu işlemler oluyor  */
+
+ ol li::before{
+    content: "🎀";
+ }
