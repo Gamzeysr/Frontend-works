@@ -261,8 +261,55 @@ console.log(teamUnder22);
 
 
 //*Ornek6: ortalama yasi hesaplayiniz.
-const avgAges = team.reduce((sum, person) => (sum += person.age), 0) / team.length;
-console.log(avgAges);
+// const avgAges = team.reduce((sum, person) => (sum += person.age), 0) / team.length;
+// console.log(avgAges);
 
 // tek bir değer döndüreceksen reduce kullanabilirim . tek bir değer dediğim age oluyor.
-// reduce un espirisi iki tane zorunlu paramentresi vardı unutma bir tanesi acc birisi vvalue,bu acc ve valuenın isimleri değişebilir.
+// reduce un espirisi iki tane zorunlu parament
+// resi vardı unutma bir tanesi acc birisi vvalue,bu acc ve valuenın isimleri değişebilir.
+
+// let fullStack = {
+// languages: ["JavaScript", "React", "HTML"],
+// jira: true,
+// gitHub: true,
+// difficulty: 8,
+// }
+//
+// for (let item of Object.values(fullStack)) {
+// console.log(item[0]);
+// console.log(item[1]);
+// console.log(item[2]);
+// }
+// for (let languages in fullStack) {
+// console.log(fullStack.languages.slice(0));
+// }
+
+// let fullStack = {
+// languages: ["JavaScript", "React", "HTML"],
+// jira: true,
+// gitHub: true,
+// difficulty: 8,
+// }
+//
+// Object.keys(fullStack).forEach((p) => console.log(p));
+
+// for (a of Object.keys(fullStack)) {
+//
+// console.log(a);
+// }
+
+const myCar = {
+    make: 'ford',
+    model: 'Mustang',
+    year: 1965,
+    color: 'Black',
+
+    calculateAge: function () {
+        return new Date().getFullYear() - this.year;
+    },
+
+};
+
+
+//
+// 
