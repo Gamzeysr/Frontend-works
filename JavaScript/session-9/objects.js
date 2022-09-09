@@ -205,3 +205,64 @@ Object.values(peoples).forEach((p) => console.log(p.surname));
 
 Object.values(peoples).forEach((p) => console.log(p.dob));
 // Buradada developer olanların dob degerlerini yazdırdık 
+
+
+
+//************************************************
+//* .JSON.=>.Javascript.Object.notation
+//**************************************************
+
+// JSON objectsi bir dizi içerisindeki objecttir. 
+
+const team = [
+    { name: "Josh", surname: "Adams", job: "developer", age: 30 },
+    { name: "Mary", surname: "Bary", job: "tester", age: 22 },
+    { name: "Hazel", surname: "Nut", job: "developer", age: 20 },
+]
+console.log(team);
+console.log(team[2]);
+// hazel yazılı kısmı getirir bu bana 
+
+//* Ornek1: team dizisindeki job'lari tek tek yazdiriniz.
+team.forEach((person) => console.log(person.job));
+// bu bana tek tek jobları döndürür 
+
+
+//* Ornek2: age'leri bir artırarak yeni bir diziye saklayiniz.
+const ages = team.map((p) => p.age + 1);
+// map fonk yeni bir dizi döndürür unutma
+console.log(ages);
+
+
+//* Ornek3: name ve surname'leri birleştirip buyuk harfe ceviren ve bunu fullname key'i olarak saklayan, ayni zamanda age degerlerini 5 arttırarak age key'ine saklayan ve olusan diziyi donduren kod yazınız.
+
+// const teamFullName = team.map((p) => ({ fullName: p.name.toUpperCase() + p.surname.toUpperCase(), age: p.age + 5 }));
+// console.log(teamFullName);
+
+//? Alternaticly çözümü
+// const teamFullName = team.map((p) => {
+// return {
+// fullName: p.name.toUpperCase() + p surname.toUpperCase(), age: p.age + 5,
+// 
+// };
+// });
+// 
+// 
+//*Örnek4: Yası(age) 22'den kücük eşit olan kisilerin adlarını (name) listeleyiniz.
+team.filter((x) => x.age <= 22).forEach((x) => console.log(x.name));
+// ilk önce filter gidiyor teamdeki üç elemanlı diziyi alıyor. daha sonra yaası 22 ve 22den küçük mü dye herbirine foreach ile bakıyor ve en sonunda bulduguklarını yazdurıyor 
+
+
+
+//* Ornek5: 22 yasindan kucuk ve esit olanların isimlerini diziye saklayiniz.
+const teamUnder22 = team.filter((x) => x.age <= 22).map((p) => p.name);
+console.log(teamUnder22);
+
+
+
+//*Ornek6: ortalama yasi hesaplayiniz.
+const avgAges = team.reduce((sum, person) => (sum += person.age), 0) / team.length;
+console.log(avgAges);
+
+// tek bir değer döndüreceksen reduce kullanabilirim . tek bir değer dediğim age oluyor.
+// reduce un espirisi iki tane zorunlu paramentresi vardı unutma bir tanesi acc birisi vvalue,bu acc ve valuenın isimleri değişebilir.
