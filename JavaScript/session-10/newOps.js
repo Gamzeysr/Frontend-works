@@ -97,10 +97,38 @@ console.log("Product Price:", price);
 
 // DESRUCTURING ile yaptıgımı artık ben asagıda biryerlerde de kullanabilirim .
 
-let daltones = ['joe', 'Jack', 'Willam', 'Averell']
-for (let i = 0; i < daltones.length; i++) {
-    if (i == 1) {
-        continue;
-    }
-    console.log(daltones[i]);
-}
+//? Fonksiyonun object parametreleri dosrudan destructuring yapılabilir.
+const calculate = ({ id, price }) => {
+    console.log(price * 1.1);
+};
+
+calculate({ id: 1, price: 3000 });
+
+//***===================================================================
+//* DESTRUCTURING (ARRAY)
+//* =====================================================================
+
+const names = ["ahmet", "mehmet", "iamet", "Saffet"];
+// Burada arrayın içindekş elemanları almak istşiyıoruz diyelim 
+// *klasik yöntemle 
+const aldık = names[1]; //indexing
+
+
+//*Destructurıng yöntemi ile
+// const [p1, p2] = names
+// console.log(p1, p2);
+//! Burada arrayları destructing yaptgımız için [] bu parantezleri kullandık
+//!Mesela burada ben istemeti değilde saffeti yazdırmak istiyorum diyelim o zaman
+const [p1, p2, , p4] = names;
+console.log(p1, p2, p4);
+
+//* ===============================================================
+//* REST(...)
+//* =================================================
+// bir seylerden geri kalanı alıyoruz restle 
+// !Bir dizi veya object deki bazı degerlerdengeri kalanları ayrı dizi ya da objelere kopyalanmasını saglayabilirler
+
+//* REST (Arrays)
+
+const vehicles = ["bmw", "reno", "mercedes", "ferrari", "anadol"];
+
