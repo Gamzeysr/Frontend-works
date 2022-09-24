@@ -1,0 +1,22 @@
+#bir {
+    float: left;
+    width: 300px;
+    height: 300px;
+    background-color: green
+}
+
+#iki {
+    float: left;
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    margin: 25px 0 0 25px
+}
+
+#uc {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    margin: 25px 0 0 25px
+}
