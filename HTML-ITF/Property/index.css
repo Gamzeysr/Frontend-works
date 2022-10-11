@@ -1,0 +1,28 @@
+nın nasıl görüneceğini belirler .display in defaul değeri block veya
+
+
+img{
+    width: 150px;
+    height: 100px;
+    display: none;
+    
+}
+
+#one{
+    background-color: antiquewhite;
+    display: inline;
+    
+}
+
+#two{
+    background-color: aquamarine;
+    display: inline;
+}
+
+#three{
+    background-color: cornflowerblue;
+    /* display: inline; */
+    /* display: none; */
+}
+/* display inline yazıları içiçe giridiriyor */
+ /* display none da yazıyı kaldırıyor  */
