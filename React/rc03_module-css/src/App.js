@@ -1,5 +1,14 @@
+import Card from "./component/card/Card";
+// import Buton from "./component/buton/Buton";
+
+
+
 function App() {
-  return <h1>APP</h1>;
+  return (
+    <>
+      <Card />
+    </>
+  );
 }
 
 export default App;
