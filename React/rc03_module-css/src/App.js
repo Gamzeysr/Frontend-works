@@ -1,12 +1,18 @@
 import Card from "./component/card/Card";
-// import Buton from "./component/buton/Buton";
+import data from "./util/data";
 
 
 
 function App() {
+  //JS
   return (
+    //JSX
     <>
-      <Card />
+      {data.map((item) => {
+
+        return <Card />;
+      })}
+
     </>
   );
 }
