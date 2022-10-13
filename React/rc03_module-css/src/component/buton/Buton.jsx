@@ -1,7 +1,11 @@
-import './Buton.css';
+import ButonStyle from './buton.module.css';
 
-const Buton = () => {
-    return <div>Buton</div>;
+const Buton = ({ btn }) => {
+    return (
+        <div className={ButonStyle.title}>
+            <button>{btn}</button>
+        </div >
+    );
 };
 
 export default Buton;
