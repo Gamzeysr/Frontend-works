@@ -1,0 +1,56 @@
+@import "./variebles";
+
+.container {
+    text-align: center;
+    margin-bottom: 7rem;
+    text-align: center;
+
+
+
+    .card {
+        padding: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.7);
+        margin: 1.5rem;
+        max-width: 300px;
+
+        img {
+            width: 40%;
+            border-radius: 50%;
+            margin: 1rem;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        .buttons {
+            button {
+                border: none;
+                cursor: pointer;
+                margin-right: 0.5rem;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+
+            &--small {
+                background-color: wheat;
+                padding: 0.7rem;
+            }
+
+            &--large {
+                background-color: $Paleta-1-2-hex;
+                padding: 0.7rem;
+            }
+
+
+        }
+    }
+
+}
