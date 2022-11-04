@@ -10,6 +10,7 @@ const UseReducerExample = () => {
   //  ☝reducer.js nin içinde yazdgımız parametre hoookunu buraya içine alıyor .
   // Yani böğlelikle reducer içinde yaptıgımız stateleri buraya aldık bu sekilde 
   // state : staatelerimiz oluyor, dispatch de değiştirici fonksiyonlarımız olmuş oluyor 
+  // Yani o bir çok stateler yerine useReducer hookunu kullanıyoruz 
 
   console.log(state);
   const { loading, error, catImage } = state;
