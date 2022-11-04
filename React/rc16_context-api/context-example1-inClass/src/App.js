@@ -22,10 +22,14 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="login" element={<Login />} />
 
+          {/* 👇Burada PrivateRouter diyecerek ilk önce sayfa tıklandıgında privater roter contentine git sen bi süzgeçten geçir ondan sonra Peopla gec dedik. */}
+          {/* Yani PrivateRouer yazıp </Route> ile kapatarak people imizı sarmallamış olduk.canlıdada kullanıcı people tıklayınca direk resimler gelmeyecek ilk önce bir PrivateRouter.jsx componentinden geçip sonra resimler gelecek  */}
+
           <Route path="people" element={<PrivateRouter />}>
             <Route path="" element={<People />} />
             <Route path=":id" element={<PersonDetail />} />
           </Route>
+          Absolute path kullanmadıgımız için önce people dedik sonra
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

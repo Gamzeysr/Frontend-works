@@ -34,7 +34,7 @@ function Navs() {
             <Link className="nav-link" to="/people">
               People
             </Link>
-
+            {/* Contextin içinde ki çektiğimiz bilgileri Burarada baska linklere tıklanınca inputun içinin silinmesini sağladık 👇 */}
             {!user.email ? (
               <Link className="nav-link" to="/login">
                 Login
