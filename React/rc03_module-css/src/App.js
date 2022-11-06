@@ -23,4 +23,4 @@ function App() {
 // Burada map fonk ile dedikki datamnın içinde ki verileri al her birini lazım olanlar bana destr yaptık isimlerini verdik bunları getir didedik 
 export default App;
 
-
+// key={id} yazmamızın sebebi hata almamak içinm id olmasaydı bu sefer index yazıp key={index } yazardık console da hata almamız için.

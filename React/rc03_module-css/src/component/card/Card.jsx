@@ -13,6 +13,7 @@ const Card = ({ language, btn, img }) => {
 
 
             <Buton btn={btn} />
+            {/* 👆Burada ki verimi Buton.jsx ine gönderdiğimden bu sekilde yaptım burayı  */}
         </div>
     );
 };
