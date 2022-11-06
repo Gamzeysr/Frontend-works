@@ -19,3 +19,4 @@ const data = [
   },
 ];
 export default data;
+// BUrası verilerimizin bulundugu Klasör bunu daha sonrasında api den cekicez 👆🏋️‍♂️
