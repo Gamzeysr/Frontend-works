@@ -16,10 +16,14 @@ const Home = () => {
       },
       secondary: {
         main: teal[500],
+        // ☝Burada da secondry rengi defaultu yesil ama ben onu mavi olarak değiştirdim 
       },
     },
   });
+  // Burada renkleri tanımlayıp başka yerlerde kullanabilirz ☝ 
+  // renk paletini de bulmak için material ui den  pallette yazdık oraya bakarak yaptık bunu☝
   return (
+    // tanımladıgım rengi kullanabilmek için buThemeProvider theme={theme} deyip sarmallıyoruz 
     <ThemeProvider theme={theme}>
       <AppbarComp />
       <TypoButtons />
