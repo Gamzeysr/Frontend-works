@@ -1,4 +1,5 @@
 import HeaderStyle from "../scss/header.module.scss";
+//👆 scss içinde olusturdugum renkleri, yazı tiplerini vs geldim burada import ettim. 
 
 
 
