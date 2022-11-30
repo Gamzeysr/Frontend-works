@@ -27,3 +27,4 @@ export default counterReducer;
 //!✨ Burada neden BUYUK HARFLE yazıyoruz sebebi: kodlamada hiç degeri değişmeyenlere biz constıt deriz. Bir kere baslangıctta deger alıyor b-ve bir daha değişmiyor.ve bu constıtlar string se genellkile buyuk harfle yazılır.
 //* reducer lar de state ve action alıyor.reducer ın birinci parametresi her zaman statedir.İkinci parametre actiondur.✨{typeipayload}✨ şeklinde de görebiliriz.
 //* payload da dispact in gönderdiğği veri.
+//?? Birden fazla redureim olacagından o yuzden reducer klasötünde tapoluyorum. ve Her bir INCREMENT'i DECREMENT'i CLEAR'ı burada değişken olrak kullanıyorum. 
