@@ -17,8 +17,7 @@ const Counter = () => {
           onClick={() => dispatch(increment())}
         //!👆 Bu ✨dispatch(increment()✨ yazmamızın sebebi URL taraında daha sade bir görüntü olsun diye .
         //! Bunu da counterActiondan import ediyorum.
-        >
-          increase
+        >increase
         </button>
         <button
           className="counter-button zero"
@@ -31,8 +30,7 @@ const Counter = () => {
           className="counter-button negative"
           // onClick={() => dispatch({ type: "DECREMENT" })}
           onClick={() => dispatch(decrement())}
-        >
-          decrease
+        >decrease
         </button>
       </div>
     </div>
