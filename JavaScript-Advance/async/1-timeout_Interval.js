@@ -99,3 +99,8 @@ const intervalId = setInterval(() => {
     }
 }, 1000);
 //  eger bu sekilde olsaydı o zaman cıktı ilk Timer started sonra 1,2,3,4,5 olup sonrasında Timer Stoped olacaktı
+
+
+
+
+
