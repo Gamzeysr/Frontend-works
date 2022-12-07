@@ -9,6 +9,7 @@ const TodoInput = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(addTodo(text));
+    //!actiondaki addTodo yu buraya cagırdık ve içerisnede useStatetext verisini koyduk. 
     setText("");
   };
 
@@ -29,3 +30,8 @@ const TodoInput = () => {
 };
 
 export default TodoInput;
+
+// ! Add butonuna basıldıgında handleSubmit calısyor
+// ? inputa bir seyler yazılıp Add butonuna tıkladıgında o veriyi text de tutor. o yüzden text verisini dispatch etmem lazım . oyüzden✨ const dispatch = useDispatch(); ✨ hookunu cagırıyorum.
+
+//? Kullanıxcıının girdiği degerleri useState hooku tutuyr

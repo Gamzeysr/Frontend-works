@@ -3,9 +3,9 @@ import okLogo from '../../assets/ok.png';
 import deleteLogo from '../../assets/delete.png';
 
 const TodoItem = ({ completed, text, id }) => {
-  const handleToggle = () => {};
+  const handleToggle = () => { };
 
-  const handleDelete = () => {};
+  const handleDelete = () => { };
 
   const styled = {
     textDecoration: completed ? 'line-through' : 'none',
