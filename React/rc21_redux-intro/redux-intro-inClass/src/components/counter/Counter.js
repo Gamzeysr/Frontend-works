@@ -37,3 +37,4 @@ const Counter = () => {
 
 export default Counter;
 
+//!✨✨✨ Bu kısımda increment decrement ve clear fonk cagırıyoruz. 
