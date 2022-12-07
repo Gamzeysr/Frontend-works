@@ -1,20 +1,25 @@
 // const initialState = {
 //   counter: 0,
 // };
-
+// ✨Buradan 👇
 // const reducer = (state = initialState, action) => {
+//? actionun içinde aslında type ve payload vardır. Yani action yerine ✨{type,payload}✨ şeklinde yazılsada olurdu.payload aslında dispatchin gönderdiği veri unutma!!Veri çekecerğimizde payloadıda kullanıyoruz burada veri çekmediğimiz için kullanmadık.
 //   switch (action.type) {
 //     case "INCREMENT":
 //       return { counter: state.counter + 1 };
+//?👆 Burada key value mantıgı var ve burada counterımıza erişmek için statet.counterımızı bir artır demiş olduk 
 //     case "DECREMENT":
 //       return { counter: state.counter - 1 };
 //     case "CLEAR":
 //       return initialState;
+// ? 👆Burdada counterımızıı sıfıra dedik aslında initialState diyetere counter :  da diyebilirdik 
 //     default:
 //       return state;
 //   }
 // };
 // export default reducer;
+// ✨Buraya kadar reducer ımız oluyor.👆
+//? Bu reducer metodumuz içine parametre olarak stateimizi ve actionu alıyor.Sonra bir durum makinesi old için switch case yapısıyla actionların türüne göre karar veriyor.Sonrasında INCREMENT DECREMENT CLEAR isimlerini verdik şimdi bu ICREMENT DECREMENT CLEAR durumlarında statelerimizin durumlarını ayarlayacagız.
 
 //! Burada reducerlarımızı birleştirip tek bir elden vermemiz gerekiyor.STOORE mantıgını düşün 👇Yani reducerlarımızı combine etmemiz gerekiyor.
 //! birden fazla reducer olunca tek bir yerde birleştirmemez gerekiyor.oyüzden baba klasörümüzde birleştiriyoruz.
