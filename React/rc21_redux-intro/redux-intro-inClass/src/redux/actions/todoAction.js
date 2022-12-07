@@ -15,3 +15,4 @@ export const toggle_todo = (payload) => {
 export const delete_todo = (payload) => {
   return { type: DELETE_TODO, payload: payload };
 };
+// ! Burada veriilerimi aldımburadan sonra bunları harekete gecirmek için hangilerini harekete geçirmek istiyırsam componentsin altında ki klasörün hangiside veriyi harekete gecirmek isityorsam onu yapıyorum

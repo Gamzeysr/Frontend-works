@@ -38,3 +38,4 @@ export default todoReducer;
 
 //!!!🏄‍♂️🏄‍♂️ Bu reducer kısmı bizim statelerimizi değiştirdiğimiz kısım 🏄‍♂️
 //! stateleri değişimin i nasıl istiyorsak o sekilde ayarladıgımız kısım.
+//* Bu ADD_TODO da kullanıcı verileri girince bu sekilde olsun dedik.Onu ayarladık 
