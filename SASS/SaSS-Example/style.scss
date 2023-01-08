@@ -4,6 +4,29 @@
     padding: 0;
 }
 
+//**********************************************************/
+//* Varieble Declaration
+//**********************************************************/
+$bgColor: pink;
+$fontSize: 1.2rem;
+$fontColor: white;
+$navBgColor: #30a7c3;
+$fontFamily: "Segoe UI",
+    'Segoe UI',
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+$bannerBgColor: hotpink;
+
+//!👆Sass da degişkenlerı atarken basına $ işaretini kouyoruz ve bu degiskene atadıgmız isimlere camelCase deniyor.Bu degişkenleri artık istediğim yerde kullanabailrim isimleri ile istediğim yerde cagırıp kullanabilirim.
+//! Atama yaptıgmız camelCaselere de kebapcase deniyor👇body nın içindekilere örnek göstrebilirz.👇
+//**********************************************************/
+//* Varieble Usage
+//**********************************************************/
 body {
-    font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fontFamily;
+    background-color: $bgColor ;
+    font-size: $fontSize;
+    color: $fontColor;
 }
