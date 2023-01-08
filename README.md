@@ -6,6 +6,9 @@
 
 <p align="center"><img src="https://user-images.githubusercontent.com/99876715/194717950-20d89fbf-d279-495b-8ced-2b96d675b604.gif" /></p>
 
+![image (25)](https://user-images.githubusercontent.com/108168084/211215534-d35c19fe-e960-47ba-8b32-1bd086bba884.png)
+
+
 🎉SASS🎉Kurulumu👇
 <br>Node.js   --> yükle locale
 <br>node--version --> bashden yüklendi mi bak
