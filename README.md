@@ -11,6 +11,6 @@
 <br>node--version --> bashden yüklendi mi bak
 <br> npm install -g sass --> sass ı kur
 <br>sass --version --> sass kuruldu mu bak
-----🎉🎉🎉🎉---------
+<br>----🎉🎉🎉🎉---------
 <br>Compiled style.scss to style.css.👇
-<br>sass --watch style.scss:style.css -->diyerekten style.scss i style.css e cevirmiş oluyoruz
+sass --watch style.scss:style.css -->diyerekten style.scss i style.css e cevirmiş oluyoruz
