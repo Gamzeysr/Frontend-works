@@ -11,4 +11,28 @@ body {
   color: white;
 }
 
+header {
+  background-color: #30a7c3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 80px;
+}
+header ul {
+  list-style-type: none;
+}
+header li {
+  display: inline-block;
+  padding: 0.5rem;
+}
+header li:hover {
+  text-decoration: underline;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */
