@@ -18,6 +18,7 @@ $fontFamily: "Segoe UI",
     Verdana,
     sans-serif;
 $bannerBgColor: hotpink;
+$myBorder: 2px solid brown;
 
 //!👆Sass da degişkenlerı atarken basına $ işaretini kouyoruz ve bu degiskene atadıgmız isimlere camelCase deniyor.Bu degişkenleri artık istediğim yerde kullanabailrim isimleri ile istediğim yerde cagırıp kullanabilirim.
 //! Atama yaptıgmız camelCaselere de kebapcase deniyor👇body nın içindekilere örnek göstrebilirz.👇
@@ -37,9 +38,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
 
     img {
         width: 80px;
+        border: $myBorder;
+        border-radius: 10px;
 
     }
 
@@ -71,3 +75,5 @@ header {
     }
 
 }
+
+//************** BANNER *************//

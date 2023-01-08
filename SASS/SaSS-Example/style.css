@@ -16,9 +16,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 }
 header img {
   width: 80px;
+  border: 2px solid brown;
+  border-radius: 10px;
 }
 header ul {
   list-style-type: none;
