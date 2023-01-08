@@ -13,4 +13,4 @@
 <br>sass --version --> sass kuruldu mu bak
 ----🎉🎉🎉🎉---------
 <br>Compiled style.scss to style.css.👇
-sass --watch style.scss:style.css -->diyerekten style.scss i style.css e cevirmiş oluyoruz
+<br>sass --watch style.scss:style.css -->diyerekten style.scss i style.css e cevirmiş oluyoruz
