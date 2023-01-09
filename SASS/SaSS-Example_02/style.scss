@@ -114,3 +114,51 @@ header {
         // resimin sayfa buyugunce resim buyor sayfa kuculunce resım kuculuyor biz bunu engelliyoruz min-widt ve max-widh ile.
     }
 }
+
+//************** CARDS *************//
+//******************
+//! @MIXIN
+//********************
+
+
+@mixin myBox($backColor, $Color) {
+    background-color: $backColor;
+    color: $Color;
+    width: 25%;
+    height: 15rem;
+    border: $myBorder;
+    border-radius: 5px;
+}
+
+// Farklı özelliklere sahip olacak olanları parametre yapıyorum.
+// Aynı ortak şeyelere sahip olacak olanları @mixin içine süslü parantezin içine yazıyorum.Yani aslında devamlı kullanacak oldugum seyleri fonksiyon haline getirip kullanıyorum.
+// 👆Burada yaptgımız seye ismen ✨declaration✨ diyoruz.  sonrada bunları kullanacagimiz yerde ✨ invok ✨ yapıyoruz. Yani kullanacagımız yerde cagırıyoruz.Aşagıdakiler invok yapımına örnek👇
+
+.cards {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+
+
+    .card1 {
+        @include myBox(green, white);
+
+    }
+
+    .card2 {
+        @include myBox(red, pink);
+    }
+
+    .card3 {
+        @include myBox(yellow, black);
+    }
+
+    .card4 {
+        @include myBox(blue, yellowgreen);
+    }
+}
+
+//************ ARTICLES ************/
+//***************************
+//! @EXTEND
+//*************************
