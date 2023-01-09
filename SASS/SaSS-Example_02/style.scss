@@ -77,3 +77,39 @@ header {
 }
 
 //************** BANNER *************//
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bannerBgColor;
+    padding: 1rem;
+    //👆 paddingle iç hacim verdik.
+    line-height: 2rem;
+    // yazıların içini açtık 👆
+
+
+    aside {
+        button {
+            background-color: $navBgColor;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            margin-right: 0.5rem;
+
+            &:hover {
+                background-color: $bgColor;
+                cursor: pointer;
+            }
+
+        }
+
+    }
+
+    img {
+        width: 30%;
+        min-width: 250px;
+        max-width: 400px;
+        // resimin sayfa buyugunce resim buyor sayfa kuculunce resım kuculuyor biz bunu engelliyoruz min-widt ve max-widh ile.
+    }
+}
