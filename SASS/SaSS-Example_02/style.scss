@@ -163,6 +163,7 @@ header {
 //! @EXTEND
 //*************************
 // extend ile de aynı özelliklere sahip olacak olanları yapacaksak eger @extend ile (kopyala-yapıstr mantıgı ile)yapabilirz.
+// Bu extend de parametre yok
 .articles {
     display: flex;
     padding: 1rem;
@@ -197,7 +198,7 @@ $textColor: #990000, #55004e, #0fa8a1, #121456, #64c217;
 footer {
 
     .social-icons {
-        //? tasıyıcımız social-cons oldugundan buraya display-flex veriyoruz.
+        //? tasıyıcımız social-icons oldugundan buraya display-flex veriyoruz.
         display: flex;
         height: 10rem;
 
