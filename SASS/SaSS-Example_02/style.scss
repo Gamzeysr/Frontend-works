@@ -131,7 +131,7 @@ header {
 }
 
 // Farklı özelliklere sahip olacak olanları parametre yapıyorum.
-// Aynı ortak şeyelere sahip olacak olanları @mixin içine süslü parantezin içine yazıyorum.Yani aslında devamlı kullanacak oldugum seyleri fonksiyon haline getirip kullanıyorum.
+// Aynı ortak şeyelere sahip olacak olanları ortak class a alıp, @mixin içine süslü parantezin içine yazıyorum.Yani aslında devamlı kullanacak oldugum seyleri fonksiyon haline getirip kullanıyorum.
 // 👆Burada yaptgımız seye ismen ✨declaration✨ diyoruz.  sonrada bunları kullanacagimiz yerde ✨ invok ✨ yapıyoruz. Yani kullanacagımız yerde cagırıyoruz.Aşagıdakiler invok yapımına örnek👇
 
 .cards {
@@ -162,3 +162,25 @@ header {
 //***************************
 //! @EXTEND
 //*************************
+// extend ile de aynı özelliklere sahip olacak olanları yapacaksak eger @extend ile (kopyala-yapıstr mantıgı ile)yapabilirz.
+.articles {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    //    👆 gapler tasıyıcıya verilir.
+
+    .article1 {
+        background-color: grey;
+        width: 50%;
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 10rem;
+
+    }
+
+    .article2 {
+        @extend .article1;
+        background-color: beige;
+        color: red;
+    }
+}
