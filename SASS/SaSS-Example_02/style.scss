@@ -184,3 +184,40 @@ header {
         color: red;
     }
 }
+
+//*********** FOOTER *******/
+
+//************************
+//! FOR LOOP
+//************************ 
+
+$textColor: #990000, #55004e, #0fa8a1, #121456, #64c217;
+
+//! sabit oranlarla degisen, artan, azalan, buyuyen, kücülen classlarımız olursa bu classları döngülerle oluşturabilirz.Yani tek tek class yazmak yerine otomatik olarak degişen bir sey varsa bunları döndülerle yaPabiliriz.
+footer {
+
+    .social-icons {
+        //? tasıyıcımız social-cons oldugundan buraya display-flex veriyoruz.
+        display: flex;
+        height: 10rem;
+
+        // @for $i from 1 to 6
+        // 👆asagıdaki for döngüsünü bunun gibi de yapabilirz.
+        // iki for döngüsü de aynı demek 1 den bese kadar demek
+
+        @for $i from 1 through 5 {
+            .social#{$i} {
+                width: 20%;
+                // background-color: lighten(rgb(141, 62, 62), $i * 5);
+                //! 👆background-color: u kırmızıdan basla koyu olrak sonra her 10 birimde azalt demiş olduk.
+                background-color: darken(blue, $i * 7);
+                // 👆bu da koyudan acıga dgru gider.
+                font-size: $i * 1rem;
+                //👆 yazıların kalıngı 1rembuyümesini sağladık.
+                color: nth($textColor, $i );
+                //?👆 Bu color nth ise textColor adında tanımlama yapıp renk verdiğimiz yerleri her birini sırasıyla renklerini alıyor.
+            }
+        }
+    }
+
+}
