@@ -98,6 +98,7 @@ header {
             margin-right: 0.5rem;
 
             &:hover {
+                // iki butonada fare uzerine gelince rengi pembe olması için & bunu verdik 
                 background-color: $bgColor;
                 cursor: pointer;
             }
