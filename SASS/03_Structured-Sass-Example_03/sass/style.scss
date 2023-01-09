@@ -1,9 +1,29 @@
 //********************************************/
 //* STYLE SCSS
 //********************************************/
+//! @import "./abstracts/variables";
+// import yerine @use kullanılabiliyor yeni versiyonda👇
+//? @use "./abstracts/variables";
+@use "./base/reset";
+@use "./abstracts/variables" as v;
+@use "./components/index" as *;
+
+//!body {
+//!     font-family: $fontFamily;
+//!    background-color: $bgColor;
+//!   font-size: $fontSize;
+//!  color: $fontColor;
+//!}
+//?body {
+//?     font-family: variables.$fontFamily;
+//?    background-color: variables.$bgColor;
+//?   font-size: variables.$fontSize;
+//?  color: variables.$fontColor;
+//?}
+
 body {
-    font-family: $fontFamily;
-    background-color: $bgColor;
-    font-size: $fontSize;
-    color: $fontColor;
+    font-family: v.$fontFamily;
+    background-color: v.$bgColor;
+    font-size: v.$fontSize;
+    color: v.$fontColor;
 }

@@ -2,6 +2,7 @@
 //*****************
 //! @MIXIN
 //*****************
+@import "variebles";
 
 @mixin myBox($backColor, $color) {
     background-color: $backColor;
@@ -11,3 +12,7 @@
     border: $myBorder;
     border-radius: 5px;
 }
+
+// Mixinde baska yerden alınma bir sey var.
+// $myBorder dısarıdan variebles dan geldiği için variablesı buraya mixins dosyasının içine import edicez.
+//! DİKKAT!! $backColor ve $color parametre o yüzden import etmeyiz

@@ -1,4 +1,6 @@
 //*******  BANNER *********/
+@use "../abstracts//variables" as *;
+
 .banner {
     display: flex;
     justify-content: space-between;
