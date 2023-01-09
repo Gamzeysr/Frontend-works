@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+//********************************************/
+//* Variable Declaration
+//********************************************/
+$bgColor: pink;
+$fontSize: 1.2rem;
+$fontColor: white;
+$navBgColor: #30a7c3;
+$fontFamily: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$bannerBgColor: hotpink;
+$myBorder: 2px solid brown;
+
+//********************************************/
+//* Variable Usage
+//********************************************/
+body {
+    font-family: $fontFamily;
+    background-color: $bgColor;
+    font-size: $fontSize;
+    color: $fontColor;
+}

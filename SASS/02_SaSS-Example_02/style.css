@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: pink;
   font-size: 1.2rem;
   color: white;
@@ -26,11 +26,11 @@ header img {
 header ul {
   list-style-type: none;
 }
-header li {
+header ul li {
   display: inline-block;
   padding: 0.5rem;
 }
-header li:hover {
+header ul li:hover {
   text-decoration: underline;
 }
 header a {
@@ -47,10 +47,10 @@ header a {
   line-height: 2rem;
 }
 .banner aside button {
-  background-color: #30a7c3;
   padding: 0.5rem;
   border: none;
   border-radius: 5px;
+  background-color: #30a7c3;
   margin-top: 1rem;
   margin-right: 0.5rem;
 }
@@ -67,7 +67,7 @@ header a {
 .cards {
   display: flex;
   gap: 0.5rem;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 .cards .card1 {
   background-color: green;
@@ -78,8 +78,8 @@ header a {
   border-radius: 5px;
 }
 .cards .card2 {
-  background-color: red;
-  color: pink;
+  background-color: brown;
+  color: white;
   width: 25%;
   height: 15rem;
   border: 2px solid brown;
@@ -94,8 +94,8 @@ header a {
   border-radius: 5px;
 }
 .cards .card4 {
-  background-color: blue;
-  color: yellowgreen;
+  background-color: rgb(40, 33, 56);
+  color: white;
   width: 25%;
   height: 15rem;
   border: 2px solid brown;
@@ -115,47 +115,46 @@ header a {
   height: 10rem;
 }
 .articles .article2 {
-  background-color: beige;
-  color: red;
+  background-color: hotpink;
+  border-color: green;
 }
 
+footer p {
+  background-color: lightgreen;
+}
 footer .social-icons {
   display: flex;
   height: 10rem;
 }
 footer .social-icons .social1 {
   width: 20%;
-  background-color: #0000db;
+  background-color: rgba(43, 143, 229, 0.89);
   font-size: 1rem;
   color: #990000;
 }
 footer .social-icons .social2 {
   width: 20%;
-  background-color: #0000b8;
+  background-color: rgba(65, 155, 232, 0.89);
   font-size: 2rem;
   color: #55004e;
 }
 footer .social-icons .social3 {
   width: 20%;
-  background-color: #000094;
+  background-color: rgba(88, 167, 234, 0.89);
   font-size: 3rem;
   color: #0fa8a1;
 }
 footer .social-icons .social4 {
   width: 20%;
-  background-color: #000070;
+  background-color: rgba(111, 179, 237, 0.89);
   font-size: 4rem;
   color: #121456;
 }
 footer .social-icons .social5 {
   width: 20%;
-  background-color: #00004d;
+  background-color: rgba(133, 191, 240, 0.89);
   font-size: 5rem;
   color: #64c217;
-}
-
-footer p {
-  background-color: lightgreen;
 }
 
 /*# sourceMappingURL=style.css.map */
