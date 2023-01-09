@@ -222,3 +222,24 @@ footer {
     }
 
 }
+
+//************************
+//! İF ELSE
+//************************ 
+$dark: 2;
+
+footer {
+    p {
+        @if $dark==1 {
+            background-color: gray;
+        }
+
+        @else if $dark==2 {
+            background-color: lightgreen;
+        }
+
+        @else {
+            background-color: lightcoral;
+        }
+    }
+}
