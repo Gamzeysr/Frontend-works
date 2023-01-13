@@ -44,12 +44,13 @@
 
     /*! Dikey Hizalama => align-items
   /**  flex-start, flex-end,center, stretch,baseline */
-    align-items: flex-end;
+    align-items: center;
 
     /*! Çok satırlı verilerin dikeyde hizalanmasi için kullanılır.
-  //*! flex-wrap: wrap modu */
+  /*! flex-wrap: wrap modunun acık olması gerekiyor */
     align-content: flex-end;
     overflow: auto;
+
 }
 
 .container1 div {
