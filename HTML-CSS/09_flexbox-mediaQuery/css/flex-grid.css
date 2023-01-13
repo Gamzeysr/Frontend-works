@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.container {
+    width: 100%;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.col-1 {
+    width: 8.333333%;
+}
+
+.col-2 {
+    width: 16.666667%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.333333%;
+}
+
+.col-5 {
+    width: 41.666667%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.333333%;
+}
+
+.col-8 {
+    width: 66.666667%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.333333%;
+}
+
+.col-11 {
+    width: 91.666667%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.logo {
+    background-color: hotpink;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    background-color: tomato;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    background-color: turquoise;
+    padding: 2rem;
+}
+
+.bolum1 {
+    background-color: rgb(115, 27, 197);
+    padding: 2rem;
+
+
+}
+
+.bolum2 {
+    background-color: crimson;
+    padding: 2rem;
+}
+
+.bolum3 {
+    background-color: yellowgreen;
+    padding: 2rem;
+}
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: calc(100vh - 22rem);
+}
+
+.row3 {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(53, 138, 53);
+    height: calc(20vh - 1rem);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
