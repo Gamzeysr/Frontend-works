@@ -85,3 +85,15 @@ h1 {
 }
 
 /* her bir path e 100% e tamamlamaya calıstık ona göre % ler ayarlı */
+
+@media screen and (min-width: 600px)and (max-width: 900px) {
+    body {
+        color: var(--beyaz);
+        background-color: var(--acik-kirmizi);
+    }
+
+    .col {
+        width: 50%;
+        margin: 0.5rem 0;
+    }
+}
