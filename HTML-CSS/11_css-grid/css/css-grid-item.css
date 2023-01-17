@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* ?👆 4 tane sütun olusturduk bu sekilde en basıdınden 
+    grid-template-rows: repeat(4, 25vh); */
+    /*?👆 Buradada kısaca 4 tane 25 vhlık row olusturmuş olduk  */
+    /* ekran tam oturmuyor asagı dgru kayıyor bunu önlemek için çıkarma işlemi yapıcaz ekran aşağı dgru kayma yasadığı için row-gapın heightden cıkarıcaz. 👇*/
+    grid-template-rows: 25vh repeat(3, calc(25vh - 0.5rem));
+    /* bu işlem sayesinde artık ekrana tam oturuyor👆
+    3 kere bu cıkarma işlemini tekrar et demişolduk 3 gaplık yer oldugundan doolayı */
+    /*!!! DİKKAT bizim burda 25vh dediğimiz de bunun içinde borderda dahil olmuş oluyor */
+    /* ekranın kayma nedeni:gaplardan yada marginlerden verdiğimiz bosluklardan dolayı oluyor bu ekranı düzeltmek için (tam oturtmak için) marginlerivb gapleri cıkarıcaz heightlerden */
+
+
+    row-gap: 0.5rem;
+    /*? row contentin asagıtarafına bosluk veriyor */
+    column-gap: 0.5rem;
+    /*?columda da columnun sonuna dgru bosluk veriyor yanı ssağdan doğru */
+    /* gap: 1rem 2rem; */
+    /*?👆bu sekilde verirsem gapi birincisi satırlar ikincisi sutunlar seklinde gap vermiş oluyorum  */
+    /* gap: 1rem; */
+    /*?👆 bu sekilde de hem satıra hem sutuna dgru 1rem vermiş oluyorum  */
+}
+
+.content {
+    background-color: aquamarine;
+    border: salmon solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.c6 {
+    /*!itemları biresysel olarak yatay düzlemde hizalar  */
+    justify-self: center;
+    width: 6rem;
+
+
+}
+
+.c11 {
+    /*! itemi dikey olarak hizalıyor  */
+
+    align-self: center;
+    height: 3rem;
+}
+
+/* track etmek istersek👇 yani; content1 ile content2'yi birleştiriyoruz*/
+.c1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: bisque;
+
+}
+
+/*!content4 ile content8yi birleştirelim 👇 */
+.c4 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: rgb(122, 102, 19);
+}
