@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 1rem;
+    text-align: center;
+}
+
+.container {
+
+    display: grid;
+    /*!👇 Sırasıyla 200px,40vw ve 20rem'lik 3 adet sütun tanımlama */
+    grid-template-columns: 200px 40vw 20rem;
+    /*! sırasıyşa 100pxlik,200px,20vh ve 4rem'lik yüksekliğe sahio 4 adet satır tanımlama(4*3 Grid ) 👇 */
+    grid-template-rows: 100px 500px 20vh 4rem;
+    /* !👇 grid seviyesinde hizalama Bu hızalama ile butun itemları sayfada ortalamış olduk  */
+    justify-content: center;
+    /*? centerda itemlar auto height alir  */
+    align-items: center;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+}
+
+.content {
+    background-color: blue;
+    border: 5px solid salmon;
+
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+    align-items: center;
+}
+
+.content7 {
+    background-image: url(https://i.ytimg.com/vi/3t1nl4IO7DM/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content5 {
+    background-color: aquamarine;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+.content9 {
+    background-image: url(https://i.ytimg.com/vi/FulyL4oFj40/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
