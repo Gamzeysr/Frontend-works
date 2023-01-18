@@ -19,7 +19,8 @@
 
 
     row-gap: 0.5rem;
-    /*? row contentin asagıtarafına bosluk veriyor */
+    /*? row contentin asagı
+    tarafına bosluk veriyor */
     column-gap: 0.5rem;
     /*?columda da columnun sonuna dgru bosluk veriyor yanı ssağdan doğru */
     /* gap: 1rem 2rem; */
@@ -35,6 +36,12 @@
     justify-content: center;
     align-items: center;
 
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .c6 {
@@ -60,9 +67,39 @@
 
 }
 
-/*!content4 ile content8yi birleştirelim 👇 */
+/*!content4 ile content8'i birleştirelim 👇 */
 .c4 {
     grid-row-start: 2;
     grid-row-end: 4;
     background-color: rgb(122, 102, 19);
+}
+
+/*! şimdi 8 9 12 13 ü birleştirelim👇*/
+/* c8 in columunun 2sinden basla diyoruz 4 e kadar git.
+Sonra row */
+.c8 {
+    background-color: chartreuse;
+    /* grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5; */
+
+    /*! Bu dördü tek satırda yapabilirz👇 */
+    /*? grid-area:row_start / col_start / row_end / col_end */
+    grid-area: 3 / 2 / 5 /4;
+
+}
+
+/*! content2 3 6 7 yi birleştirelim yani area yapalım şimdi de 👇 */
+
+.c2 {
+    background-color: pink;
+    /* grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    /* grid-area: 1 / 3 / 3 / 5; */
+    /*! farklı bır kullanımı daha👇 */
+    grid-area: 1 / 3 / span 2 / span 2;
+    /*? burada span demek brim olarak düşünebilirim baslasdgım yerden 2 brim git demek burada yaptıgımız sey yine aynı sonucu verir yani area yi verir bize hangisi bize en uygunsa onu yapabiliriz dedi noah hoca*/
 }
