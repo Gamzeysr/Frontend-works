@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 25vh repeat(3, calc(25vh - 0.5rem));
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+}
+
+header {
+    grid-column: span 12;
+    background-color: blueviolet;
+}
+
+nav {
+    grid-column: span 2;
+    background-color: cornflowerblue;
+}
+
+article {
+    grid-column: span 8;
+    background-color: coral;
+}
+
+aside {
+    grid-column: span 2;
+    background-color: goldenrod;
+}
+
+footer {
+    grid-column: span 12;
+    background-color: darkblue;
+}
