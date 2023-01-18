@@ -45,7 +45,7 @@ main {
 
 footer {
     background-color: dimgrey;
-    /* grid-area: 1 / 1 / 1 /13; */
+
     grid-column: span 12;
 
 }
