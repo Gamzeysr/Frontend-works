@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px 20vh calc(100vh - (200px + 30vh)) 10vh;
+
+}
+
+.header {
+    background-image: url(https://images.alphacoders.com/559/thumb-350-559881.jpg);
+    /* grid-column: span 12; */
+    /* resmimi 12 brlik yerı kaplatmış oldum  */
+    /*👇 grid-column:11spanı asagıda ki gibide yapabiliriz */
+    grid-area: 1 /1 /1 /13;
+
+}
+
+nav {
+    background-color: aqua;
+    grid-column: span 12;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+aside {
+    background-color: antiquewhite;
+    grid-column: span 3;
+}
+
+main {
+    background-color: rgb(158, 21, 128);
+    grid-column: span 9;
+}
+
+footer {
+    background-color: dimgrey;
+    /* grid-area: 1 / 1 / 1 /13; */
+    grid-column: span 12;
+
+}
