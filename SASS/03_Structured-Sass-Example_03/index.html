@@ -2,72 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>03_STRUCTURED_SASS-EXAMPLE</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="./images/sass.png" alt="logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Browse</a></li>
-                <li><a href="#">Landing</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Account</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="home-bgImg-container">
 
-    <main>
-        <section class="banner">
-            <aside>
-                <h3>Clarusway's Sass Page</h3>
-                <p>SASS is a Css plugin that is one of the popular, stable and professional level CSS preprocessons</p>
-                <div class="buttons">
-                    <button>Browse Course</button>
-                    <button>SASS-SCSS</button>
-                </div>
-            </aside>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link nav__link--active ">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">About Me</a>
+        </li>
+        <li class="nav__item">
+          <a href="projects.html" class="nav__link">My Projects</a>
+        </li>
+        <li class="nav__item">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-            <img src="./images/banner-img.png" alt="banne-img">
-
-        </section>
-
-        <section class="cards">
-            <div class='card1'>Card1</div>
-            <div class='card2'>Card2</div>
-            <div class='card3'>Card3</div>
-            <div class='card4'>Card4</div>
-        </section>
-
-
-        <section class="articles">
-            <article class="article1">Article1</article>
-            <article class="article2">Article2</article>
-
-        </section>
+    <!-- HOME MAIN -->
+    <main class="home">
+      <h2>Hi! My Name Is</h2>
+      <h1 class="home__name">
+        John <span class="home__name--last">Smith</span>
+      </h1>
+      <h2>Full Stack Web Developer</h2>
     </main>
 
-
-
-
-    <footer>
-        <p>Designed by Clarusway </p>
-        <div class="social-icons">
-            <div class="social1">S1</div>
-            <div class="social2">S2</div>
-            <div class="social3">S3</div>
-            <div class="social4">S4</div>
-            <div class="social5">S5</div>
-        </div>
-
+    <!-- HOME FOOTER -->
+    <footer class="horizontal">
+      <div class="social-icons">
+        <a href="#">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </div>
+      <div class="copyright">&copy; Copyright 2021</div>
     </footer>
+
+
+
+
+
+
+
+  </div>
 
 </body>
 
