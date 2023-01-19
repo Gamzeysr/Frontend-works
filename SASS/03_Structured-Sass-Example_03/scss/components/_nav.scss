@@ -4,19 +4,21 @@
 
 //* Grandparent class (nav)
 
-.nav{
+.nav {
     // border: 2px solid red;
     padding: 1rem;
     height: 10vh;
 
-    &__list{
+    &__list {
         text-align: right;
     }
-    &__item{
+
+    &__item {
         display: inline;
         padding: 1rem;
     }
-    &__link{
+
+    &__link {
         font-size: 1rem;
         text-transform: uppercase;
         font-weight: 500;
@@ -25,11 +27,12 @@
         @include transition(1s);
 
 
-        &:hover{
+        &:hover {
             color: blue;
+            cursor: pointer;
         }
 
-        &--active{
+        &--active {
             color: $secondary-color;
         }
     }
