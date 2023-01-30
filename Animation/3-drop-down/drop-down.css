@@ -1,0 +1,53 @@
+/** 🧨bir card olusturup, o cardın yukarıdan asagı inmesini sağlıyacaz ve bir süre durup yukarı geri gitmesini sağlayacagız  */
+/*****! DROP-DOWN ANIMATION ********/
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: coral;
+    padding: 1rem;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    animation: dropdown 4s ease-in-out forwards;
+    position: absolute;
+
+}
+
+/* card classı son frame de dursun dıye forwards veriyoruz yani turuncu yer sayfanın yukarısından gelip ortasında duracak */
+
+.card button {
+    border: none;
+    padding: 1rem;
+    background-color: red;
+    color: antiquewhite;
+    border-radius: 10px;
+    width: 7rem;
+    cursor: pointer;
+
+
+}
+
+.card button:hover {
+    background-color: gainsboro;
+}
+
+@keyframes dropdown {
+
+    /* baslangıctata -50 verdikki görünmeyen yerden insin istedik  */
+    0% {
+        top: -50%;
+    }
+
+
+
+    /* 4 s nın en sonunda artık bunu kullandıyor */
+    /* 50% de enson card ın  sayfanın ortasında durmasını saglıyor  */
+    /* mesela 100% deseydik o zaman sayfanın en sonun da dururdu  */
+    100% {
+        top: 50%;
+    }
+}
