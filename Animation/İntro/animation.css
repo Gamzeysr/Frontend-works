@@ -35,6 +35,11 @@
     /* basa gitmesinacık mavi renkdeki inner divim son da kalsın istiyorsak bu forwardsı kullanırız  */
     animation-fill-mode: backwards;
     /* 👉 animasyon ilk keyframe de biter */
+    /** 👇animasyon geçikmesi  */
+    /* bu anımasyona baslarken gecikmeli basla demek oluyo  */
+    animation-delay: 1s;
+    /* Baslangıctakilerin yapılmasını geciktitirken negatif degerler baslangıctakıların yapılmamasını saglıyor */
+    animation-delay: -2s;
 }
 
 /*? burada acık mavi renkde olan ınner dıvımızın 1s de 4 hareket yapıp kacıncı bırımlerde yani yüzdeliklerde hareket edeceğini ayarlıyoruz 👇 */
