@@ -1,0 +1,39 @@
+/******* ANIMATION INTRO *******/
+
+.outer {
+    background-color: blue;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.inner {
+    background-color: aqua;
+    width: 50%;
+    height: 50%;
+    /* transition: transform 1s ease-in-out; */
+}
+
+/* outer ın üzerine geldiğinde inner i değiştir diyorum asagıdakını yaparak 👇*/
+/* .outer:hover .inner {
+    transform: translateX(100%);
+} */
+
+/*! bu acık mavi kutugu simdi asagı gitsin gelsin yukarı cıksın tekrar bunu yapıcaz simdi bu gibi durumlarda transition yerine animation u kullanmak daha mantıklıdır👇 */
+.outer:hover .inner {
+    animation: travel 1s ease-in-out;
+}
+
+@keyframes travel {
+
+    /*! baslangıc konumu */
+    0% {
+        transform: translateX(0);
+    }
+
+    /*! yüzde 33üncu konuma geldiğinde asagı in */
+    33% {
+        transform: translateY(100%);
+    }
+
+}
