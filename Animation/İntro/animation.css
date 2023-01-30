@@ -27,8 +27,11 @@
     animation-iteration-count: infinite;
     /* 👆 burada da sonsuz dersek hep durmadan calısacak  */
     /* animation-iteration-count: komutu bana yapmış oldugum animasyonumun  kaç kere tekrar edeceğini sağlıyor */
+    /**👇 animasyon yönü */
+    animation-direction: alternate;
 }
 
+/*? burada acık mavi renkde olan ınner dıvımızın 1s de 4 hareket yapıp kacıncı bırımlerde yani yüzdeliklerde hareket edeceğini ayarlıyoruz 👇 */
 @keyframes travel {
 
     /*! baslangıc konumu */
