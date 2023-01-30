@@ -22,8 +22,11 @@
 /*! bu acık mavi kutugu simdi asagı gitsin gelsin yukarı cıksın tekrar bunu yapıcaz simdi bu gibi durumlarda transition yerine animation u kullanmak daha mantıklıdır👇 */
 .outer:hover .inner {
     animation: travel 1s ease-in-out;
-    animation-iteration-count: 2;
+    /* animation-iteration-count: 2; */
     /*👆 Mouseum outer divine geldiğinde innerım iki kere calısıyor  */
+    animation-iteration-count: infinite;
+    /* 👆 burada da sonsuz dersek hep durmadan calısacak  */
+    /* animation-iteration-count: komutu bana yapmış oldugum animasyonumun  kaç kere tekrar edeceğini sağlıyor */
 }
 
 @keyframes travel {
@@ -38,4 +41,14 @@
         transform: translateY(100%);
     }
 
+    66% {
+        transform: translate(100%, 100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+
 }
+
+/*! 4 asama old için zamanı esit aralıklara bölmek için buı sekilde yapıldı istediğğimiz gibi ayarlanabilir */
