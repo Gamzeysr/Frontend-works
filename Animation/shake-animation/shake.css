@@ -1,0 +1,69 @@
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 3rem;
+}
+
+
+
+
+
+div i {
+    font-size: 10rem;
+    color: blueviolet;
+}
+
+/* şimdş bu iki icıonu animasyon ile sallıcaz yani shake yapıcaz 👇 */
+.fa-bell:hover {
+    animation-name: shake;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes shake {
+
+    /* baslangıcta👇 */
+    0% {
+        /* döndürdük rotate ile  */
+        transform: rotate(20deg);
+    }
+
+    50% {
+        /*  zamanın yarısında terse döndürdük  */
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* doları da sürekli calıssın ama uzerine gelindiğinde dursun istiyorum 👇 */
+
+
+.fa-dollar-sign {
+    animation: dance 1s ease-in-out infinite alternate forwards;
+}
+
+
+.fa-dollar-sign:hover {
+    animation-play-state: paused;
+}
+
+@keyframes dance {
+
+    from {
+        transform: skew(30deg);
+    }
+
+    to {
+        transform: skew(-30deg);
+    }
+}
+
+/* @keyframes  de zaman dilimlerinde ne yapacak oldugunu saglıyoruz 
+ama iki seiklde zaman ver,dersek from to deriz from demek fromdan basla to ya kadar devam et demek   */
