@@ -22,6 +22,8 @@
 /*! bu acık mavi kutugu simdi asagı gitsin gelsin yukarı cıksın tekrar bunu yapıcaz simdi bu gibi durumlarda transition yerine animation u kullanmak daha mantıklıdır👇 */
 .outer:hover .inner {
     animation: travel 1s ease-in-out;
+    animation-iteration-count: 2;
+    /*👆 Mouseum outer divine geldiğinde innerım iki kere calısıyor  */
 }
 
 @keyframes travel {
