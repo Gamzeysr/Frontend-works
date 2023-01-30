@@ -12,12 +12,13 @@
     max-width: 600px;
     margin: auto;
     text-align: center;
-    animation: dropdown 4s ease-in-out forwards;
     position: absolute;
-
+    animation: dropdown 4s ease-in-out forwards,
+        fadeIn 2s ease-in-out forwards
 }
 
-/* card classı son frame de dursun dıye forwards veriyoruz yani turuncu yer sayfanın yukarısından gelip ortasında duracak */
+/* 2 den fazla anımatıon yaparsak  */
+/* card classı son frame de dursun dıye forwards veriyoruz yani kaldıgı yerde bıtsın diyoruz  */
 
 .card button {
     border: none;
@@ -49,5 +50,15 @@
     /* mesela 100% deseydik o zaman sayfanın en sonun da dururdu  */
     100% {
         top: 50%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
