@@ -34,6 +34,8 @@ myInput.style.padding = "1rem";
 //*-------------------------------------------
 
 const list = document.getElementsByTagName("li");
+//! etiket ismine göre getiriyor👆 burada li etiketine göre bana getir demişiz.
+//! Bu bana butun li elementlerini getirir 
 console.log(list); //? HTML Collection
 list[2].style.color = "red";
 const elementThree = list.item(3);

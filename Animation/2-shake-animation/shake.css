@@ -8,8 +8,6 @@ div {
 
 
 
-
-
 div i {
     font-size: 10rem;
     color: blueviolet;
@@ -41,6 +39,7 @@ div i {
         transform: rotate(0deg);
     }
 }
+
 
 /* doları da sürekli calıssın ama uzerine gelindiğinde dursun istiyorum 👇 */
 
