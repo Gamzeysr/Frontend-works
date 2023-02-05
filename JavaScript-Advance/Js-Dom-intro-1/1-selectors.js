@@ -35,22 +35,25 @@ h2.style.textAlign = "center";
 //*EXAMPLE-3
 //*-------------------------------------------
 
-// const list = document.getElementsByTagName("li");
-// //! etiket ismine göre getiriyor👆 burada li etiketine göre bana getir demişiz.
-// //! Bu bana butun li elementlerini getirir 
-// console.log(list); //? HTML Collection
-// list[2].style.color = "red";
-// const elementThree = list.item(3);
-// elementThree.style.color = "blue";
-// elementThree.textContent = "React / Vue / Angular";
+const list = document.getElementsByTagName("li");
+//! etiket ismine göre getiriyor👆 burada li etiketine göre bana getir demişiz.
+//! Bu bana butun li elementlerini getirir 
+console.log(list); //? HTML Collection
+list[2].style.color = "red";
+const elementThree = list.item(3);
+//! 👆Burda i de indexleme ile aynı sey aslında HTML Collection a ait method
+elementThree.style.color = "blue";
+elementThree.textContent = "React / Vue / Angular";
 
-// list[4].innerText = "Django / Flask";
+list[4].innerText = "Django / Flask";
 
-// console.log(list[1].textContent);
-// console.log(list[1].innerText);
+console.log(list[1].textContent);
+console.log(list[1].innerText);
 
-// //? HTML kodlarini calistirir. (Guvenlik acisindan problemli)
-// list[4].innerHTML = "<a href='https://www.clarusway.com'>Clarusway Web</a>";
+//? HTML kodlarini calistirir. (Guvenlik acisindan problemli)
+list[4].innerHTML = "<a href='https://www.clarusway.com'>Clarusway Web</a>";
+
+//!✨ Java script ortamında innerHTML kullanmak tehlikeli!
 
 //*===========================================
 //*          GETELEMENTSBYCLASSNAME()
