@@ -85,29 +85,29 @@ myListArray.forEach((item) => console.log(item.innerText));
 // *              QUERYSELECTOR()
 // * ========================================
 
-// // ? 1- queryselector() etiket secebilir.
-// const myLi = document.querySelector("li");
-// console.log(myLi.innerText);
-// myLi.style.color = "yellowgreen";
+// ? 1- queryselector() etiket secebilir.
+const myLi = document.querySelector("li");
+console.log(myLi.innerText);
+myLi.style.color = "yellowgreen";
 
-// // ? 2- queryselector() class secebilir.
+// ? 2- queryselector() class secebilir.
 
-// const itemList = document.querySelector(".item-list");
-// itemList.style.background = "grey";
+const itemList = document.querySelector(".item-list");
+itemList.style.background = "grey";
 
-// // ? 3- queryselector() id secebilir.
-// const input = document.querySelector("#input");
-// console.log(input.value);
+// ? 3- queryselector() id secebilir.
+const input = document.querySelector("#input");
+console.log(input.value);
 
-// document.querySelector("#btn").style.cursor = "pointer";
+document.querySelector("#btn").style.cursor = "pointer";
 
-// // ? 4- queryselector() ile CSS deki gibi secim yapilabilir.
+// ? 4- queryselector() ile CSS deki gibi secim yapilabilir.
 
-// const itemH2 = document.querySelector(".item-list h2");
-// itemH2.style.color = "purple";
+const itemH2 = document.querySelector(".item-list h2");
+itemH2.style.color = "purple";
 
-// const myBtn = document.querySelector("input[type='button']");
-// console.log(myBtn);
+const myBtn = document.querySelector("input[type='button']");
+console.log(myBtn);
 
 // * ========================================
 // *              QUERYSELECTORALL()
