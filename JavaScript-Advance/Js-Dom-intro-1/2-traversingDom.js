@@ -25,6 +25,7 @@ console.log(list.parentNode.parentNode.parentNode.parentNode.parentNode); //? do
 
 console.log(list.parentElement);
 
+
 //! closest(): belirtilen elementin parent'larin ilk uygun parent'i secer
 const itemListSec = list.closest("section");
 itemListSec.style.background = "grey";
@@ -36,15 +37,16 @@ console.log(addItem.children);
 const h2 = addItem.children[0];
 h2.style.color = "blue";
 
+
 console.log(addItem.parentNode.parentNode.children[0]); //? Header
 
 console.log(ul.firstElementChild.innerText);
 console.log(ul.lastElementChild.innerText);
 
-//*3- Yatay Yonde traverse
-//*----------------------------------------------
+// //*3- Yatay Yonde traverse
+// //*----------------------------------------------
 
-//! nextElementSibling ,previousElementSibling
+// //! nextElementSibling ,previousElementSibling
 
 const myList = ul.children;
 console.log(myList);
