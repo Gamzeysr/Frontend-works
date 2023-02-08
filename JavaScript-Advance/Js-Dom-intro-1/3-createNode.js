@@ -15,15 +15,19 @@ h2.after(newP);
 // 👆sonrada  h2 elementin altına olusturdugum newP elementini yazdır dıyorum 
 
 // //? getAttribute()
-// console.log(newP.getAttribute("class"));
-// console.log(newP.getAttribute("id"));
-// console.log(newP.getAttribute("name"));
+// getAttribute() elementi herhangi bi elementi bana getir oku demek 
+console.log(newP.getAttribute("class"));
+console.log(newP.getAttribute("id"));
+console.log(newP.getAttribute("name"));
+// 👆mesela buradaki üç örnekde html de ki class ı bana getir idsini getir name getir bana oku dedik 
 
 // //? classList
-// console.log(newP.classList.contains("par")); //? true
-// newP.classList.add("new-class");
-// console.log(newP);
-// newP.classList.remove("new-class");
+//! classList de bizim herhangi bir elemente class vermemizi class kaldırmamızı sağlıyor.O class var mı bakmamızı sağloyor. 
+console.log(newP.classList.contains("par")); //? true
+newP.classList.add("new-class");
+//👆 newP ye yeni bir class atayabiliyorum 
+console.log(newP);
+newP.classList.remove("new-class");
 
 // //? INNER HTML (Ciddi Guvenlik aciklari var)
 // const ul = document.querySelector("ul");
