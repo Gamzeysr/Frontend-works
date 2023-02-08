@@ -46,23 +46,25 @@ document.getElementById("btn").addEventListener('click', function () {
 // !input.value ? alert("Please enter an item") : alert(`${input.value} entered`)
 // //* EXAMPLE-3
 // //* -------------------------------------------------
-// const list = document.querySelectorAll(".list"); //?nodelist
+const list = document.querySelectorAll(".list"); //?nodelist
+//? querySelector bize nodelist döndürüyor unutma!!nodelist döndürdüğündende direkt foreachı kullanabiliyoruz.
 
-// list.forEach((li) => {
-//     li.style.transition = "all 0.8s";
-//     li.style.lineHeight = "2rem";
+list.forEach((li) => {
+    li.style.transition = "all 0.8s";
+    li.style.lineHeight = "2rem";
 
-//     li.onmouseover = () => {
-//         li.style.fontSize = "2rem";
-//         li.style.transform = "translateX(10px)";
-//     };
+    li.onmouseover = () => {
+        li.style.fontSize = "2rem";
+        li.style.transform = "translateX(10px)";
+    };
 
-//     li.onmouseout = () => {
-//         li.style.fontSize = "1rem";
-//         li.style.transform = "translateX(-10px)";
-//     };
-// });
+    li.onmouseout = () => {
+        li.style.fontSize = "1rem";
+        li.style.transform = "translateX(-10px)";
+    };
+    // console.log(li.innerText);
+});
 
-// const print = () => {
-//     console.log("Starting");
-// };
+const print = () => {
+    console.log("Starting");
+};
