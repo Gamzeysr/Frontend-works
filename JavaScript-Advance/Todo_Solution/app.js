@@ -12,6 +12,7 @@ toDo.appendChild(newUl);
 
 // Add butonumu yapıyorum 
 addBtn.addEventListener("click", () => {
+
     if (!input.value) {
         alert("Please enter new Todo🤦‍♂️");
     } else {
@@ -23,4 +24,5 @@ addBtn.addEventListener("click", () => {
     input.focus();
 
 });
+
 
