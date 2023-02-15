@@ -61,3 +61,8 @@ todoInput.addEventListener("keydown", (e) => {
         addBtn.click();
     }
 });
+
+//👇Bu sekil de  Baslangıcta input aktıf hale geliyor
+window.onload = function () {
+    todoInput.focus();
+};
