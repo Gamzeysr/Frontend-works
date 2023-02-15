@@ -26,12 +26,18 @@ addBtn.addEventListener("click", () => {
 
 //! bu da fonksıyon oluyor artık 👇OLUSTURMUS OLDGUM FONKSIYONA NEWtODO YU GÖNDERİYORUM 
 const createListElement = (newTodo) => {
+    const { id, completed, text } = newTodo; //!destr.
+    //** destr. ile cevizin kabugunu kırdık artık cevizi tüketebiliriz :))
     const li = document.createElement("li");
     // li.id = newTodo.id;
-    li.setAttribute("id", newTodo.id);
+    // li.setAttribute("id", newTodo.id);
+    //!destr. yaptıgımdan artık newTodo yazmama gerek kalmadı.👇
+    li.setAttribute("id", id);
 
-    newTodo.completed && li.classList.add("checked");
+    // newTodo.completed && li.classList.add("checked");
     // 👆 newTodo da eger completed varsa li nin claslisstine checked i ekle dedik burada Yani burada artık completed true ise style daki checked classı devreye giriyor.Yani kullanıcının girdği input daki degerler checked clasında ne verdiysek onu alıyor 
+    //! newTodo.completed && li.classList.add("checked"); yerine artık sadece  completed && li.classList.add("checked"); demem yeterli oluyor destr. yaptıgım için 👇
+    completed && li.classList.add("checked");
 
 
     //* ok ıconu👇
@@ -42,10 +48,13 @@ const createListElement = (newTodo) => {
 
     //! todo baslıgı için bir p elementi ve yazı duguöu olsturarak li'ye bagla👇
     const p = document.createElement("p");
-    const pTextNode = document.createTextNode(newTodo.text);
+    // const pTextNode = document.createTextNode(newTodo.text);
     //* 👆kullanıcınınn girecek yazı olgundan bu idye atanacagından her inputtaki herbır deger o yuzden bu sekilde yaptık 
     p.appendChild(pTextNode);
     li.appendChild(p);
+
+    //! const pTextNode = document.createTextNode(newTodo.text); yerine artık const pTextNode = document.createTextNode(text); yazıyorum👇destr sayesinde
+    const pTextNode = document.createTextNode(text);
 
     //* delete iconu👇
     const deleteIcon = document.createElement("i");
