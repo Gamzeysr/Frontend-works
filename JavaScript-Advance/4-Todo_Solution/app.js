@@ -12,7 +12,7 @@ addBtn.addEventListener("click", () => {
     } else {
         const newTodo = {
             id: new Date().getTime(),
-            completed: false,
+            completed: true,
             text: todoInput.value,
         };
         createListElement(newTodo);
@@ -29,6 +29,10 @@ const createListElement = (newTodo) => {
     const li = document.createElement("li");
     // li.id = newTodo.id;
     li.setAttribute("id", newTodo.id);
+
+    newTodo.completed && li.classList.add("checked");
+    // 👆 newTodo da eger completed varsa li nin claslisstine checked i ekle dedik burada Yani burada artık completed true ise style daki checked classı devreye giriyor.Yani kullanıcının girdği input daki degerler checked clasında ne verdiysek onu alıyor 
+
 
     //* ok ıconu👇
     const okIcon = document.createElement("i");
