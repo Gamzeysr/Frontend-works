@@ -18,6 +18,7 @@ addBtn.addEventListener("click", () => {
         createListElement(newTodo);
         //!👆 Burada method olusturmamın amacı  yukarıda ki aldıgımız verileri bir fonksiyona atmak
         //*🧨 elsein içinde methodu olusturyoruz dikkat et!!!!
+        todoInput.value = ""
     }
 });
 //! space ile girilirse ve bosluk olursa iki türlüde alert versin diye trim() kullandıık 
@@ -48,9 +49,15 @@ const createListElement = (newTodo) => {
     li.appendChild(deleteIcon);
 
 
-
-
-
+    //👇 meydana gelen li elementini de ul ye baglıyoruz. 
     todoUl.appendChild(li);
 
 };
+
+//👇 enter tusa basıldıgında da calıssın dıye asagıdakını yapıyoruz.
+// js'ce dedikki👉 enter tusuna basıldıgında addBtn nunu click yap dedik 
+todoInput.addEventListener("keydown", (e) => {
+    if (e.code === 'Enter') {
+        addBtn.click();
+    }
+})
