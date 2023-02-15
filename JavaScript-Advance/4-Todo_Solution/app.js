@@ -60,4 +60,4 @@ todoInput.addEventListener("keydown", (e) => {
     if (e.code === 'Enter') {
         addBtn.click();
     }
-})
+});
