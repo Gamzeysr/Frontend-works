@@ -3,7 +3,8 @@ const addBtn = document.querySelector("#todo-button");
 const todoInput = document.getElementById("todo-input");
 const todoUl = document.querySelector("#todo-ul");
 
-let todos = JSON.parse(localStorage.getItem("TODOS"));
+let todos = JSON.parse(localStorage.getItem("TODOS")) || [];
+// null olmasın dıye || [] yaptık 
 
 // bilgileri localstorage e atmam için bu arrayı olusturmam lazım.
 // okumam içinde en sonki halini alıyor 
