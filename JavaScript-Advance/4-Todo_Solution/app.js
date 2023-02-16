@@ -12,13 +12,13 @@ addBtn.addEventListener("click", () => {
     } else {
         const newTodo = {
             id: new Date().getTime(),
-            completed: true,
+            completed: false,
             text: todoInput.value,
         };
         createListElement(newTodo);
         //!👆 Burada method olusturmamın amacı  yukarıda ki aldıgımız verileri bir fonksiyona atmak
         //*🧨 elsein içinde methodu olusturyoruz dikkat et!!!!
-        todoInput.value = ""
+        todoInput.value = "";
     }
 });
 //! space ile girilirse ve bosluk olursa iki türlüde alert versin diye trim() kullandıık 
@@ -48,13 +48,13 @@ const createListElement = (newTodo) => {
 
     //! todo baslıgı için bir p elementi ve yazı duguöu olsturarak li'ye bagla👇
     const p = document.createElement("p");
+    //! const pTextNode = document.createTextNode(newTodo.text); yerine artık const pTextNode = document.createTextNode(text); yazıyorum👇destr sayesinde
+    const pTextNode = document.createTextNode(text);
     // const pTextNode = document.createTextNode(newTodo.text);
     //* 👆kullanıcınınn girecek yazı olgundan bu idye atanacagından her inputtaki herbır deger o yuzden bu sekilde yaptık 
     p.appendChild(pTextNode);
     li.appendChild(p);
 
-    //! const pTextNode = document.createTextNode(newTodo.text); yerine artık const pTextNode = document.createTextNode(text); yazıyorum👇destr sayesinde
-    const pTextNode = document.createTextNode(text);
 
     //* delete iconu👇
     const deleteIcon = document.createElement("i");
@@ -62,10 +62,39 @@ const createListElement = (newTodo) => {
     li.appendChild(deleteIcon);
 
 
-    //👇 meydana gelen li elementini de ul ye baglıyoruz. 
+    //👇 en son ki bağlama işlemi olarakda meydana gelen li elementini de ul ye baglıyoruz. 
     todoUl.appendChild(li);
 
 };
+//! Silme işlemini yapıcaz şimdi 👇
+todoUl.addEventListener("click", (e) => {
+
+    if (e.target.classList.contains("fa-trash")) {
+        e.target.parentElement.remove();
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //👇 enter tusa basıldıgında da calıssın dıye asagıdakını yapıyoruz.
 // js'ce dedikki👉 enter tusuna basıldıgında addBtn nunu click yap dedik 
@@ -79,3 +108,4 @@ todoInput.addEventListener("keydown", (e) => {
 window.onload = function () {
     todoInput.focus();
 };
+
