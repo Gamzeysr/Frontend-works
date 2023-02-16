@@ -3,7 +3,18 @@ const addBtn = document.querySelector("#todo-button");
 const todoInput = document.getElementById("todo-input");
 const todoUl = document.querySelector("#todo-ul");
 
+let todos = JSON.parse(localStorage.getItem("TODOS"));
 
+// bilgileri localstorage e atmam için bu arrayı olusturmam lazım.
+// okumam içinde en sonki halini alıyor 
+
+const renderSavedTodos = () => {
+    todos.forEach((todo) => {
+        createListElement(todo);
+    });
+};
+
+renderSavedTodos();
 
 
 addBtn.addEventListener("click", () => {
@@ -15,7 +26,15 @@ addBtn.addEventListener("click", () => {
             completed: false,
             text: todoInput.value,
         };
+        // 👇yeni bir li elemnti olusturup dom a bas 
         createListElement(newTodo);
+
+        todos.push(newTodo);
+        //👆 Bu sekilde elementimi arraaya a atmış oldum.
+        localStorage.setItem("TODOS", JSON.stringify(todos));
+        // arraya atmış oldugum elementi localStorage a kaydediyorum string halinde
+
+
         //!👆 Burada method olusturmamın amacı  yukarıda ki aldıgımız verileri bir fonksiyona atmak
         //*🧨 elsein içinde methodu olusturyoruz dikkat et!!!!
         todoInput.value = "";
@@ -25,7 +44,7 @@ addBtn.addEventListener("click", () => {
 //! else de ise girilen verileri objeye attık isminede newTodo dedik
 
 //! bu da fonksıyon oluyor artık 👇OLUSTURMUS OLDGUM FONKSIYONA NEWtODO YU GÖNDERİYORUM 
-const createListElement = (newTodo) => {
+function createListElement(newTodo) {
     const { id, completed, text } = newTodo; //!destr.
     //** destr. ile cevizin kabugunu kırdık artık cevizi tüketebiliriz :))
     const li = document.createElement("li");
@@ -76,13 +95,14 @@ todoUl.addEventListener("click", (e) => {
 
 
     //! şimdi ok iconuna yapıcaz👇
-    if (e.target.classList.contains("fa-check")) {
+    else if (e.target.classList.contains("fa-check")) {
         e.target.parentElement.classList.toggle("checked");
     }
     //!toggle aynı contains gibi hatta daha basidi contains de içeriyorsa kaldır dedik toggle dada içeriyorsa eger kaldır içermiyorsa ekleme yap dıyoruz kendisi boğlelikle ekleme yapıp cıkarıyor.
     //! Biz burada toggle() i kullanarak fa-check classı eger checked ı içermiyorsa checked i getir, içeriyorsa checked i kaldır dedik 
 });
 
+//* Buraya kadar aslında yaptık evet ama bilgilerim sayfa reflesh yapılınca yok oluyor bunun yok olmaması için localStorage e atmam lazım . localStorage a atmam içinde bir array e  ihtiyacım var bunun için array oluşturcam
 
 
 
