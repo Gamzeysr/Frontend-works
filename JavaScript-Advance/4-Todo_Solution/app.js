@@ -69,12 +69,19 @@ const createListElement = (newTodo) => {
 //! Silme işlemini yapıcaz şimdi 👇
 todoUl.addEventListener("click", (e) => {
 
+
     if (e.target.classList.contains("fa-trash")) {
         e.target.parentElement.remove();
     }
+
+
+    //! şimdi ok iconuna yapıcaz👇
+    if (e.target.classList.contains("fa-check")) {
+        e.target.parentElement.classList.toggle("checked");
+    }
+    //!toggle aynı contains gibi hatta daha basidi contains de içeriyorsa kaldır dedik toggle dada içeriyorsa eger kaldır içermiyorsa ekleme yap dıyoruz kendisi boğlelikle ekleme yapıp cıkarıyor.
+    //! Biz burada toggle() i kullanarak fa-check classı eger checked ı içermiyorsa checked i getir, içeriyorsa checked i kaldır dedik 
 });
-
-
 
 
 
