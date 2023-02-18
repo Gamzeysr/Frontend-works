@@ -6,7 +6,7 @@ const todoUl = document.querySelector("#todo-ul");
 let todos = JSON.parse(localStorage.getItem("TODOS")) || [];
 // null olmasın dıye || [] yaptık 
 
-// bilgileri localstorage e atmam için bu arrayı olusturmam lazım.
+//👆 bilgileri localstorage e atmam için bu arrayı olusturmam lazım.
 // okumam içinde en sonki halini alıyor 
 
 const renderSavedTodos = () => {
@@ -17,7 +17,7 @@ const renderSavedTodos = () => {
 
 renderSavedTodos();
 
-
+// Yeni bir item geldiği zaman ilk diziye atıyoruz sonra diziden okuyoruz localStorage de 
 addBtn.addEventListener("click", () => {
     if (todoInput.value.trim() === "") {
         alert("Please enter new todo😢");
@@ -90,8 +90,22 @@ function createListElement(newTodo) {
 todoUl.addEventListener("click", (e) => {
 
 
+
     if (e.target.classList.contains("fa-trash")) {
+        //? delete butonunnun parentini DOM'dan sildik
         e.target.parentElement.remove();
+
+        const id = e.target.parentElement.getAttribute("id");
+        // 👇dizinin istenen elementini sildk
+        todos = todos.filter((todo) => todo.id !== Number(id));
+        //👇 daha sonra bunu local e gönderdik.
+        localStorage.setItem("TODOS", JSON.stringify(todos));
+        //* todos dizisinin içine filter ile gidiyorum filter seciyor.filter ile idsi benim istediğim id ye sahip olmayanları geri döndürecek.
+        // 🎆(Yani kullanıcı tıkladıgı elemnt id ye gidecek o id todo.id ye haricindekileri bana döndürecek :)) )
+        // Filter normalde bana istediğim methodları secip getiriyor buradada tam tersinii düşüncez 
+        //* her bır tem a todo dedim .ddeimki todounun içindeki obje esıt olmayanları id esit olmayanları bana getir dedim ama id esit olmayan ne şimdi ona bakıcaz.Yani id biligisini alıcam const id diyerek 
+
+
     }
 
 
