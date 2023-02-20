@@ -27,7 +27,7 @@
 // console.log("Hello");
 // alert("CW");
 // console.log("FS12");
-// Buradda ise alert i çalıştırmaya calısdıgından asagı FS12 ye geçmedi bu şekilde sıralamalı senkron calısırsa böğle oluyor.Yani kod suanda kesiliyor.Burada ki alert //! Blocking code olarak geciyor. yani kodumuzu blocklayan bir kod
+// Buradda ise alert i çalıştırmaya calısdıgından asagı FS12 ye geçmedi bu şekilde sıralamalı senkron calısırsa böğle oluyor.Yani kod suanda kesiliyor.Burada ki alert //! Blocking code olarak geciyor. yani çalışmamızı blocklayan bir kod
 
 
 //* Asenkron (setTimeout)
