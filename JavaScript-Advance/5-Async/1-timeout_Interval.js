@@ -38,21 +38,22 @@
 // }, 3000);
 // bu fonksiyon içerisinde 3  sn yi tamamladıkdan sonra hi yi çağıracak 
 
+
+
 // console.log("timeout");
 // setTimeout(() => {
 // console.log("Hi");
 // }, 3000);
 // console.log("timeout bitti");
-// Buraada ilh timeout yazar sonra timeout bitti sonra en sonundada hi i yazar cünkü hi a 3 sn sonra gel dedik .
-// Hi yazan yer bir kuyruga girip beklemiş oluyoır 
+//? Buraada ilk timeout yazar, sonrasında timeout bitti sonra en sonunda da hi i yazar cünkü hi a 3 sn sonra gel dedik. Hi yazan yer bir kuyruga girip beklemiş oluyoır 
 
 // console.log("timeout");
 // setTimeout(() => {
-// !non - blocking
+// !  non - blocking
 // console.log("hi");
 // }, 0);
 // console.log("timeout bitti");
-// Burada 0 olsa bile süre yine de bir sittimeout sıraya gireceğinden ilk timeout sonra timeout bitti en sonda hi yazılır 
+// Burada 0 olsa bile süre yine de bir setTimeout sıraya gireceğinden ilk timeout sonra timeout bitti en sonda hi yazılır 
 
 //*** Asenkron (setInterval, clearInterval) 
 //* ----------------------------------------
@@ -72,6 +73,7 @@ let counter = 0;
 const intervalId = setInterval(() => {
     console.log(++counter);
 }, 1000);
+//! her sayacta counter ımın degerini bir artırdım ++counter diyerek 
 // bu sekilde bir fonksiyonumuz olursa 1000 e kadar calısır 
 
 
