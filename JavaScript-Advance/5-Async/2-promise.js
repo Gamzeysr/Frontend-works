@@ -3,14 +3,14 @@
 //*                2- Promises
 //* =================================================
 
-//? Promise, asenkron bir islemin basariyla ve basarisizlikla bittigini g
-//? ve ayni zamanda basariyla bittiginde sonuc verilerini temsil eden bir
+//? Promise, asenkron bir islemin basariyla ve basarisizlikla bittigini gosteren
+//? ve ayni zamanda basariyla bittiginde sonuc verilerini temsil eden bir nesne yapisidir.
 
 //? SYTNAX
 //?----------
-//* 1- Ilk olarak new Promise() constructor'i ile yeni bir promise nesnes
-//* 2- constructor'a asil islemin yapilmasini saglayan bir executor fonks
-//* 3- Executor fonksiyona ise 2 argument gecirilir: resolve ve reject fo
+//* 1- Ilk olarak new Promise() constructor'i ile yeni bir promise nesnesi oluştuyrulur,
+//* 2- constructor'a asil islemin yapilmasini saglayan bir executor fonksiyon verilir.
+//* 3- Executor fonksiyona ise 2 argument gecirilir: resolve ve reject fonksiyonları
 //* 4- resolve fonksiyonu promise'in basariyla bittiginda, reject ise
 //*    basarisizlikla bittiginde isletilirler.
 
