@@ -57,6 +57,18 @@
 
 //*** Asenkron (setInterval, clearInterval) 
 //* ----------------------------------------
+
+
+let counter = 0;
+const intervalId = setInterval(() => {
+    console.log(++counter);
+}, 1000);
+//! her sayacta counter ımın degerini bir artırdım ++counter diyerek 
+// bu sekilde bir fonksiyonumuz olursa 1000 e kadar calısır 
+
+
+
+
 let counter = 0;
 const intervalId = setInterval(() => {
     console.log(++counter);
@@ -67,14 +79,6 @@ const intervalId = setInterval(() => {
 // 
 // 5 e kadar çalışsın istediğimizden  e kadar çalıştırdık bu fonk da sayacımızı 
 
-
-
-let counter = 0;
-const intervalId = setInterval(() => {
-    console.log(++counter);
-}, 1000);
-//! her sayacta counter ımın degerini bir artırdım ++counter diyerek 
-// bu sekilde bir fonksiyonumuz olursa 1000 e kadar calısır 
 
 
 
