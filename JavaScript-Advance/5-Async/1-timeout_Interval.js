@@ -107,6 +107,34 @@ const intervalId = setInterval(() => {
 //  eger bu sekilde olsaydı o zaman cıktı ilk Timer started sonra 1,2,3,4,5 olup sonrasında Timer Stoped olacaktı
 
 
+//! Callback Hell (nested ve birbirine bagli callback'ler)
+//!-----------------------------------------------------
+//* Eger birbirine bagimli asenkron kodlarin yazilmasi gerekirse,nested callback
+//* yapisinin kullanilmasi gerekebilir. Fakat bu iyi bir programlama yaklasimi degildir.
+// !callback hell olarak adlandirilan bu yapinin anlasilmasi ve surdurulebilirligi oldukca zordur.
+
+setTimeout(() => {
+    console.log("john:Hi");
+    setTimeout(() => {
+        console.log("Sarah: Hello");
+        setTimeout(() => {
+            console.log("John: How Are you?");
+            setTimeout(() => {
+                console.log("Sarah:Fine and you?");
+            }, 1000);
+        }, 1000);
+    }, 1000);
+}, 1000);
+
+//? COZUMLER:
+//?----------------------------------------------------
+//* 1- XMLHttpRequest (Eski yontem, Ornek: AJAX)
+//? https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+//* 2- Promise,
+//! 3- Fetch API (Promise'in basitlestirilmis hali),
+//! 4- ASYNC-AWAIT (Fetch API'nin makyajlanmis hali)
+
+
 
 
 
