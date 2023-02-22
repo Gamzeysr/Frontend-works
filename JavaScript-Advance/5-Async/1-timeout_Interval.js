@@ -36,7 +36,7 @@
 // setTimeout(() => {
 // console.log("Hi");
 // }, 3000);
-// bu fonksiyon içerisinde 3  sn yi tamamladıkdan sonra hi yi çağıracak 
+// bu fonksiyon içerisinde 3  sn yi tamamladıkdan sonra hi yi çağıracak
 
 
 
@@ -45,7 +45,7 @@
 // console.log("Hi");
 // }, 3000);
 // console.log("timeout bitti");
-//? Buraada ilk timeout yazar, sonrasında timeout bitti sonra en sonunda da hi i yazar cünkü hi a 3 sn sonra gel dedik. Hi yazan yer bir kuyruga girip beklemiş oluyoır 
+//? Buraada ilk timeout yazar, sonrasında timeout bitti sonra en sonunda da hi i yazar cünkü hi a 3 sn sonra gel dedik. Hi yazan yer bir kuyruga girip beklemiş oluyoır
 
 // console.log("timeout");
 // setTimeout(() => {
@@ -53,86 +53,86 @@
 // console.log("hi");
 // }, 0);
 // console.log("timeout bitti");
-// Burada 0 olsa bile süre yine de bir setTimeout sıraya gireceğinden ilk timeout sonra timeout bitti en sonda hi yazılır 
+// Burada 0 olsa bile süre yine de bir setTimeout sıraya gireceğinden ilk timeout sonra timeout bitti en sonda hi yazılır
 
-//*** Asenkron (setInterval, clearInterval) 
+//*** Asenkron (setInterval, clearInterval)
 //* ----------------------------------------
 
 
-let counter = 0;
-const intervalId = setInterval(() => {
-    console.log(++counter);
-}, 1000);
-//! her sayacta counter ımın degerini bir artırdım ++counter diyerek 
-// bu sekilde bir fonksiyonumuz olursa 1000 e kadar calısır 
+// let counter = 0;
+// const intervalId = setInterval(() => {
+//     console.log(++counter);
+// }, 1000);
+// //! her sayacta counter ımın degerini bir artırdım ++counter diyerek
+// // bu sekilde bir fonksiyonumuz olursa 1000 e kadar calısır
 
 
 
 
-let counter = 0;
-const intervalId = setInterval(() => {
-    console.log(++counter);
-    if (counter > 4) {
-        clearInterval(intervalId);
-    }
-}, 1000);
-// 
-// 5 e kadar çalışsın istediğimizden  e kadar çalıştırdık bu fonk da sayacımızı 
+// let counter = 0;
+// const intervalId = setInterval(() => {
+//     console.log(++counter);
+//     if (counter > 4) {
+//         clearInterval(intervalId);
+//     }
+// }, 1000);
+// //
+// // 5 e kadar çalışsın istediğimizden  e kadar çalıştırdık bu fonk da sayacımızı
 
 
 
 
-console.log("Timer Started");
-let counter = 0;
-const intervalId = setInterval(() => {
-    console.log(++counter);
-    if (counter > 4) {
-        clearInterval(intervalId);
-    }
-}, 1000);
-console.log("Timer stoped");
-// bu sekilde olsaydı eger ilk Timer started sonra Timer stoped sonrasındada 1,2,3,4,5 olucakdı sonuc cunku setInterval kuyruga giriyor 
+// console.log("Timer Started");
+// let counter = 0;
+// const intervalId = setInterval(() => {
+//     console.log(++counter);
+//     if (counter > 4) {
+//         clearInterval(intervalId);
+//     }
+// }, 1000);
+// console.log("Timer stoped");
+// // bu sekilde olsaydı eger ilk Timer started sonra Timer stoped sonrasındada 1,2,3,4,5 olucakdı sonuc cunku setInterval kuyruga giriyor
 
 
 
-console.log("Timer Started");
-let counter = 0;
-const intervalId = setInterval(() => {
-    console.log(++counter);
-    if (counter > 4) {
-        clearInterval(intervalId);
-        console.log("Timer stoped");
-    }
-}, 1000);
-//  eger bu sekilde olsaydı o zaman cıktı ilk Timer started sonra 1,2,3,4,5 olup sonrasında Timer Stoped olacaktı
+// console.log("Timer Started");
+// let counter = 0;
+// const intervalId = setInterval(() => {
+//     console.log(++counter);
+//     if (counter > 4) {
+//         clearInterval(intervalId);
+//         console.log("Timer stoped");
+//     }
+// }, 1000);
+// //  eger bu sekilde olsaydı o zaman cıktı ilk Timer started sonra 1,2,3,4,5 olup sonrasında Timer Stoped olacaktı
 
 
-//! Callback Hell (nested ve birbirine bagli callback'ler)
-//!-----------------------------------------------------
-//* Eger birbirine bagimli asenkron kodlarin yazilmasi gerekirse,nested callback
-//* yapisinin kullanilmasi gerekebilir. Fakat bu iyi bir programlama yaklasimi degildir.
-// !callback hell olarak adlandirilan bu yapinin anlasilmasi ve surdurulebilirligi oldukca zordur.
+// //! Callback Hell (nested ve birbirine bagli callback'ler)
+// //!-----------------------------------------------------
+// //* Eger birbirine bagimli asenkron kodlarin yazilmasi gerekirse,nested callback
+// //* yapisinin kullanilmasi gerekebilir. Fakat bu iyi bir programlama yaklasimi degildir.
+// // !callback hell olarak adlandirilan bu yapinin anlasilmasi ve surdurulebilirligi oldukca zordur.
 
-setTimeout(() => {
-    console.log("john:Hi");
-    setTimeout(() => {
-        console.log("Sarah: Hello");
-        setTimeout(() => {
-            console.log("John: How Are you?");
-            setTimeout(() => {
-                console.log("Sarah:Fine and you?");
-            }, 1000);
-        }, 1000);
-    }, 1000);
-}, 1000);
+// setTimeout(() => {
+//     console.log("john:Hi");
+//     setTimeout(() => {
+//         console.log("Sarah: Hello");
+//         setTimeout(() => {
+//             console.log("John: How Are you?");
+//             setTimeout(() => {
+//                 console.log("Sarah:Fine and you?");
+//             }, 1000);
+//         }, 1000);
+//     }, 1000);
+// }, 1000);
 
-//? COZUMLER:
-//?----------------------------------------------------
-//* 1- XMLHttpRequest (Eski yontem, Ornek: AJAX)
-//? https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
-//* 2- Promise,
-//! 3- Fetch API (Promise'in basitlestirilmis hali),
-//! 4- ASYNC-AWAIT (Fetch API'nin makyajlanmis hali)
+// //? COZUMLER:
+// //?----------------------------------------------------
+// //* 1- XMLHttpRequest (Eski yontem, Ornek: AJAX)
+// //? https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+// //* 2- Promise,
+// //! 3- Fetch API (Promise'in basitlestirilmis hali),
+// //! 4- ASYNC-AWAIT (Fetch API'nin makyajlanmis hali)
 
 
 
