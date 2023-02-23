@@ -111,6 +111,46 @@ console.log("FETCH");
 
 // 👆Bu yukarıdaki leri Desct. yöntemi ile kısaca yapabiliriz 👇
 
+// fetch("https://api.github.com/users")
+//     .then((res) => {
+//         if (!res.ok) {
+//             throw new Error("something went wrong")
+//         }
+//         return res.json();
+//     })
+//     .then((data) => update(data))
+//     .catch((hata) => console.log(hata));
+
+// const update = (users) => {
+//     const userDiv = document.querySelector(".users")
+//     users.forEach((user) => {
+//         const { login, avatar_url } = user; //!destructuring
+//         userDiv.innerHTML += `<h2>${login}</h2>
+//         <img src="${avatar_url}" width="300px" alt=""/>`
+
+//     })
+// }
+
+// fetch("https://api.github.com/users")
+//     .then((res) => {
+//         if (!res.ok) {
+//             throw new Error("something went wrong")
+//         }
+//         return res.json();
+//     })
+//     .then((data) => upDate(data))
+//     .catch((hata) => console.log(hata));
+
+
+
+// const upDate = (users) => {
+//     const userDiv = document.querySelector(".users")
+//     users.forEach((user) => {
+//         userDiv.innerHTML += `<h2>${user.login}</h2>
+//         <img src="${user.avatar_url}" width="300px" alt=""/>`
+//     })
+// }
+
 fetch("https://api.github.com/users")
     .then((res) => {
         if (!res.ok) {
@@ -118,15 +158,16 @@ fetch("https://api.github.com/users")
         }
         return res.json();
     })
-    .then((data) => update(data))
+    .then((data) => upDate(data))
     .catch((hata) => console.log(hata));
 
-const update = (users) => {
+const upDate = (users) => {
+
     const userDiv = document.querySelector(".users")
     users.forEach((user) => {
-        const { login, avatar_url } = user; //!destructuring
+        const { login, avatar_url } = user;
         userDiv.innerHTML += `<h2>${login}</h2>
-        <img src="${avatar_url}" width="300px" alt=""/>`
+            <img src="${avatar_url}" width="300px" alt=""/>`
 
     })
 }
