@@ -87,53 +87,54 @@
 // // Buraya kadar
 
 
-///******Burada amacım ekrana DOM a hata bastırmak 👇 */
-// let isError = false;
+///******Burada amacım ekrana yani DOM a hata bastırmak 👇 */
+let isError = false;
 // //!  Burada ki let dı dısatrıda tanımladım cünkü genel sayfanın her bir yerinde hata verirse diye ayarlayacak
-// const getNews = async function () {
-//     const API_KEY = "78eaa41a147841fba735c16ad17f4b61";
-//     const url = "https://newsapi.org/v2/everything?q=tesla&from=2022-08-27&sortBy=publishedAt&apiKey=";
+const getNews = async function () {
+    const API_KEY = "780d2289b4ee4b5696e1cd0d3cec9148";
+    const url = "https://newsapi.org/v2/top-headlines?country=tr&apiKey=" + API_KEY;
 
-//     try {
-//         const res = await fetch(url);
-//         // Burada yukarıdaki url leri çağırdım, res'a attım
-//         if (!res.ok) {
-//             isError = true;
-//             // bUrada False olunca hata vereceginden bu kısma gir burada hata verdirsin dite isError = true dedik
-//             // throw new erroru burada calıstırmıyoruz çünkü burada calıstırırsak direk hata verdiriyor sayfaya yani doma resimi hatayı bastırmıyor
-//             // eger true olmasadyı false olsaydı catch blogu calısacaktı
-//         }
-//         const data = await res.json();
-//         renderNews(data.articles);
-//     } catch (error) {
-//         console.log(error);
-//     }
-// };
+    try {
+        const res = await fetch(url);
+        // Burada yukarıdaki url leri çağırdım, res'a attım
+        if (!res.ok) {
+            isError = true;
 
-// const renderNews = (news) => {
-//     const newsList = document.getElementById("news-list");
-//     if (isError) {
-//         newsList.innerHTML += `
-//         <h2>News Can Not Be Fetched </h2>
-//         <img src="./img/404.png" alt=""/>
+            // throw new erroru burada calıstırmıyoruz çünkü burada calıstırırsak direk hata verdiriyor sayfaya yani doma resimi hatayı bastırmıyor
+            // eger true olmasadyı false olsaydı catch blogu calısacaktı
+        }
+        const data = await res.json();
+        renderNews(data.articles);
+    } catch (error) {
+        console.log(error);
+    }
+};
 
-//         `;
-//         // true oldugu için iserror bu block calıscak
-//         return;
-//     }
-//     news.forEach((item) => {
-//         const { title, description, urlToImage, url } = item; //! dest
-//         newsList.innerHTML += `
-// <div class="card" style="width: 18rem;">
-//   <img src="${urlToImage}" class="card-img-top" alt="...">
-//   <div class="card-body">
-// <h5 class="card-title">${title}</h5>
-// <p class="card-text">${description}</p>
-// <a href="${url}" class="btn btn-primary">Details</a>
-//   </div>
-// </div>`;
-//     });
-// };
+const renderNews = (news) => {
+    const newsList = document.getElementById("news-list");
+    if (isError) {
+        newsList.innerHTML += `
+        <h2 class="">News Can Not Be Fetched </h2>
+        <img src="./resim/404.png" alt=""/>
+        `;
+        //👆 İsError true oldugu zaman iserror blocku calıscak yani eger hata alırsa bu bloga girecek
+        return;
+        //👆 return diyerek artık geri dön asagı inme diyorum.
+    }
+    news.forEach((item) => {
+        const { title, description, urlToImage, url } = item; //! dest
+        newsList.innerHTML += `
+<div class="card" style="width: 18rem;">
+  <img src="${urlToImage}" class="card-img-top" alt="...">
+  <div class="card-body">
+<h5 class="card-title">${title}</h5>
+<p class="card-text">${description}</p>
+<a href="${url}" class="btn btn-primary">Details</a>
+  </div>
+</div>`;
+    });
+};
 
+window.addEventListener("load", getNews);
 // Buraya kadar
 
