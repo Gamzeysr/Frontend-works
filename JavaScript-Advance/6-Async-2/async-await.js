@@ -41,50 +41,51 @@
 
 //* Burada Fonksiyonları ekrana bastırdık ve hata alırsak onu ayarladık 👇🏻
 
-const getNews = async function () {
-    const API_KEY = "780d2289b4ee4b5696e1cd0d3cec9148";
-    const url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=" + API_KEY;
+// const getNews = async function () {
+//     const API_KEY = "780d2289b4ee4b5696e1cd0d3cec9148";
+//     const url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=" + API_KEY;
 
 
-    try {
-        const res = await fetch(url);
-        if (!res.ok) {
-            throw new Error(`Something went wrong: ${res.status}`);
-        }
-        const data = await res.json();
-        renderNews(data.articles);
-        // ! 👆Burada DOM üzerine işlem yapacagımız için böğle dedik
-    } catch (error) {
-        console.log(error);
-    }
+//     try {
+//         const res = await fetch(url);
+//         if (!res.ok) {
+//             throw new Error(`Something went wrong: ${res.status}`);
+//         }
+//         const data = await res.json();
+//         renderNews(data.articles);
+//         // ! 👆Burada DOM üzerine işlem yapacagımız için böğle dedik
+//     } catch (error) {
+//         console.log(error);
+//     }
 
-};
+// };
 
-//! veriyi doma basma kısmı 👇
-const renderNews = (news) => {
-    console.log(news);
-    const newsList = document.getElementById("news-list");
+// //! veriyi doma basma kısmı 👇
+// const renderNews = (news) => {
+//     console.log(news);
+//     const newsList = document.getElementById("news-list");
 
-    news.forEach((item) => {
-        const { title, description, urlToImage, url } = item; //! dest
-        newsList.innerHTML += `
-<div class="card" style="width: 18rem;">
-  <img src="${urlToImage}" class="card-img-top" alt="...">
-  <div class="card-body">
-<h5 class="card-title">${title}</h5>
-<p class="card-text">${description}</p>
-<a href="${url}" class="btn btn-primary">Details</a>
-  </div>
-</div>`;
-    });
+//     news.forEach((item) => {
+//         const { title, description, urlToImage, url } = item; //! dest
+//         newsList.innerHTML += `
+// <div class="card" style="width: 18rem;">
+//   <img src="${urlToImage}" class="card-img-top" alt="...">
+//   <div class="card-body">
+// <h5 class="card-title">${title}</h5>
+// <p class="card-text">${description}</p>
+// <a href="${url}" class="btn btn-primary">Details</a>
+//   </div>
+// </div>`;
+//     });
 
-};
-// ! ✨Burada ki card yapısını bootstrapden alığp yaptık 
+// };
+// // ! ✨Burada ki card yapısını bootstrapden alıp yaptık
 
-window.addEventListener("load", getNews);
-// buradaki window ile baslaynı getNews(); yerine yazıyoruz.
-// Bu demek oluyor ki yükleme olduktan sonra getNevs methodunu cagır demek oluyor.
-// Buraya kadar ☝🏻
+// window.addEventListener("load", getNews);
+// // buradaki window ile baslaynı getNews(); yerine yazıyoruz.
+// // Bu demek oluyor ki yükleme olduktan sonra getNevs methodunu cagır demek oluyor.
+// // Buraya kadar
+
 
 ///******Burada amacım ekrana DOM a hata bastırmak 👇 */
 // let isError = false;
@@ -136,4 +137,3 @@ window.addEventListener("load", getNews);
 
 // Buraya kadar
 
-// 780d2289b4ee4b5696e1cd0d3cec9148
