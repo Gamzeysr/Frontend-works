@@ -20,15 +20,15 @@
 
 //! arrow functıon ile yaptıgım 👇
 
-const getNews = async () => {
-    const API_KEY = "780d2289b4ee4b5696e1cd0d3cec9148";
-    const url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=" + API_KEY;
-    const res = await fetch(url);
-    // console.log(res);
-    const data = await res.json();
-    console.log(data.articles);
-};
-getNews();
+// const getNews = async () => {
+//     const API_KEY = "780d2289b4ee4b5696e1cd0d3cec9148";
+//     const url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=" + API_KEY;
+//     const res = await fetch(url);
+//     // console.log(res);
+//     const data = await res.json();
+//     console.log(data.articles);
+// };
+// getNews();
 
 
 
@@ -41,26 +41,25 @@ getNews();
 
 //* Burada Fonksiyonları ekrana bastırdık ve hata alırsak onu ayarladık 👇🏻
 
-// const getNews = async function () {
-// const API_KEY = "78eaa41a147841fba735c16ad17f4b61";
+const getNews = async function () {
+    const API_KEY = "780d2289b4ee4b5696e1cd0d3cec9148";
+    const url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=" + API_KEY;
 
 
-// const url =
-// "https://newsapi.org/v2/everything?q=tesla&from=2022-08-26&sortBy=publishedAt&apiKey=" + API_KEY;
+    try {
+        const res = await fetch(url);
+        if (!res.ok) {
+            throw new Error(`Something went wrong: ${res.status}`);
+        }
+        const data = await res.json();
+        renderNews(data.articles);
+        // ! 👆Burada DOM üzerine işlem yapacagımız için böğle dedik
+    } catch (error) {
+        console.log(error);
+    }
 
-// try {
-// const res = await fetch(url);
-// if (!res.ok) {
-// throw new Error(`Something went wrong: ${res.status}`);
-// }
-// const data = await res.json();
-// renderNews(data.articles);
-// // ! 👆Burada DOM üzerine işlem yapacagımız için böğle dedik
-// } catch (error) {
-// console.log(error);
-// }
+};
 
-// };
 //
 // const renderNews = (news) => {
 // const newsList = document.getElementById("news-list");
@@ -81,7 +80,8 @@ getNews();
 // };
 //
 // window.addEventListener("load", getNews);
-// buradaki window ile baslaynı getNews(); yerine yazıyoruz
+// buradaki window ile baslaynı getNews(); yerine yazıyoruz.
+// Bu demek oluyor ki yükleme olduktan sonra getNevs methodunu cagır demek oluyor.
 // Buraya kadar ☝🏻
 
 ///******Burada amacım ekrana DOM a hata bastırmak 👇 */
