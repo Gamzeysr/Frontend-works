@@ -8,10 +8,10 @@ const url =
 
 const res = await fetch(url);
 // ! 👆Burada isteği gönderiyoruz.
-console.log(res)
-// const data = await res.json();
-// ! 👆responsu acıp içindeki verileri alıyoruz.
-// console.log(data.articles);
+// console.log(res);
+const data = await res.json();
+// ! 👆responsun  içindek verileri alıyoruz.
+console.log(data.articles);
 };
 
 getNews();
@@ -119,5 +119,4 @@ getNews();
 //     });
 // };
 
-
-// Buraya kadar ☝
+// Buraya kadar 
