@@ -17,6 +17,8 @@ console.log(data.articles);
 getNews();
 //!👆 Buradada fonnk cagırıyorum.
 
+//** */ Buraya kadar yaptıgım işlemde verilerim i cagırmış oluyorum sadece ekrana yansımamış oluyor. 
+
 
 
 //? getNews adında bir fonksyon yazdık. Şimdi bu fonksiyonu cagırıcaz Ama öncesinde fonksiyonumuzu tanımlıcaz
