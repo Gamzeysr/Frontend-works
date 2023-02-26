@@ -60,26 +60,28 @@ const getNews = async function () {
 
 };
 
-//
-// const renderNews = (news) => {
-// const newsList = document.getElementById("news-list");
-//
-// news.forEach((item) => {
-// const { title, description, urlToImage, url } = item; //! dest
-// newsList.innerHTML += `
-// <div class="card" style="width: 18rem;">
-//   <img src="${urlToImage}" class="card-img-top" alt="...">
-//   <div class="card-body">
-// <h5 class="card-title">${title}</h5>
-// <p class="card-text">${description}</p>
-// <a href="${url}" class="btn btn-primary">Details</a>
-//   </div>
-// </div>`;
-// });
-//
-// };
-//
-// window.addEventListener("load", getNews);
+//! veriyi doma basma kısmı 👇
+const renderNews = (news) => {
+    console.log(news);
+    const newsList = document.getElementById("news-list");
+
+    news.forEach((item) => {
+        const { title, description, urlToImage, url } = item; //! dest
+        newsList.innerHTML += `
+<div class="card" style="width: 18rem;">
+  <img src="${urlToImage}" class="card-img-top" alt="...">
+  <div class="card-body">
+<h5 class="card-title">${title}</h5>
+<p class="card-text">${description}</p>
+<a href="${url}" class="btn btn-primary">Details</a>
+  </div>
+</div>`;
+    });
+
+};
+// ! ✨Burada ki card yapısını bootstrapden alığp yaptık 
+
+window.addEventListener("load", getNews);
 // buradaki window ile baslaynı getNews(); yerine yazıyoruz.
 // Bu demek oluyor ki yükleme olduktan sonra getNevs methodunu cagır demek oluyor.
 // Buraya kadar ☝🏻
