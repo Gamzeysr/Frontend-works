@@ -17,3 +17,23 @@
 <br>----🎉🎉🎉🎉---------
 <br>Compiled style.scss to style.css.👇
 sass --watch style.scss:style.css -->diyerekten style.scss i style.css e cevirmiş oluyoruz
+
+
+![React](https://user-images.githubusercontent.com/108168084/223111345-d68959c6-5a25-4bb2-b19e-db7b3c84e644.png)
+
+<br>✨REACT✨✨
+<br> node -v deyip --> node un son sürümüne bakabiliriz
+<br>npm -v --> npm'ın  en son sürümüne bakabiliriz
+<br>npm i -g npm deyip --> npm i kurabiliriz , güncelleyebilirz
+<br> 🎇NPM WİTH 🎇
+<br> npx create-react-app klasor-adı
+<br> cd klasor-adı(projenın içine giriyoruz)
+<br> npm start --> projeyi ayağa kaldırıryoruz
+<br> 🎆YARN WİTH 🎆
+<br> npm i -g yarn --> deyip yarn 'ı kurabiliriz , güncelleyebiliriz
+<br> yarn -v -->  yarn'ın ın  en son sürümüne bakabiliriz
+<br> yarn create react-app klasor-adı --> proje olustururken
+<br> cd klasor-adı(projenın içine giriyoruz)
+<br> yarn start --> projeyi ayağa kaldırıryoruz
+
+
