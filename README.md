@@ -22,4 +22,4 @@ sass --watch style.scss:style.css -->diyerekten style.scss i style.css e cevirmi
 ✨REACT✨✨
 <br> node -v deyip --> node un son sürüümüne bakabiliriz
 <br>npm -v
-<br>
+<br>npm i -g npm deyip --> npm i kurabiliriz , güncelleyebilirz
