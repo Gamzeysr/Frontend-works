@@ -17,3 +17,9 @@
 <br>----🎉🎉🎉🎉---------
 <br>Compiled style.scss to style.css.👇
 sass --watch style.scss:style.css -->diyerekten style.scss i style.css e cevirmiş oluyoruz
+
+
+✨REACT✨✨
+<br> node -v deyip --> node un son sürüümüne bakabiliriz
+<br>npm -v
+<br>
