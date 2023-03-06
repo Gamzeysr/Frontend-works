@@ -26,3 +26,4 @@ sass --watch style.scss:style.css -->diyerekten style.scss i style.css e cevirmi
 <br>npm -v
 <br>npm i -g npm deyip --> npm i kurabiliriz , güncelleyebilirz
 <br> npm i -g yarn --> deyip yarn 'ı kurabiliriz , güncelleyebiliriz
+<br> yarn -v
