@@ -25,5 +25,15 @@ sass --watch style.scss:style.css -->diyerekten style.scss i style.css e cevirmi
 <br> node -v deyip --> node un son sürümüne bakabiliriz
 <br>npm -v --> npm'ın  en son sürümüne bakabiliriz
 <br>npm i -g npm deyip --> npm i kurabiliriz , güncelleyebilirz
+<br> 🎇NPM WİTH 🎇
+<br> npx create-react-app my-first-app
+<br> cd my-first-app(projenın içine giriyoruz)
+<br> npm start --> projeyi ayağa kaldırıryoruz
+<br> 🎆YARN WİTH 🎆
 <br> npm i -g yarn --> deyip yarn 'ı kurabiliriz , güncelleyebiliriz
 <br> yarn -v -->  yarn'ın ın  en son sürümüne bakabiliriz
+<br> yarn create react-app my-first-app --> proje olustururken
+<br> cd my-first-app(projenın içine giriyoruz)
+<br> yarn start --> projeyi ayağa kaldırıryoruz
+
+
