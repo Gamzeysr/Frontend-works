@@ -19,7 +19,10 @@
 sass --watch style.scss:style.css -->diyerekten style.scss i style.css e cevirmiş oluyoruz
 
 
-✨REACT✨✨
-<br> node -v deyip --> node un son sürüümüne bakabiliriz
+![React](https://user-images.githubusercontent.com/108168084/223111345-d68959c6-5a25-4bb2-b19e-db7b3c84e644.png)
+
+<br>✨REACT✨✨
+<br> node -v deyip --> node un son sürümüne bakabiliriz
 <br>npm -v
 <br>npm i -g npm deyip --> npm i kurabiliriz , güncelleyebilirz
+<br> npm i -g yarn --> deyip yarn 'ı kurabiliriz , güncelleyebiliriz
