@@ -23,7 +23,7 @@ sass --watch style.scss:style.css -->diyerekten style.scss i style.css e cevirmi
 
 <br>✨REACT✨✨
 <br> node -v deyip --> node un son sürümüne bakabiliriz
-<br>npm -v
+<br>npm -v --> npm'ın  en son sürümüne bakabiliriz
 <br>npm i -g npm deyip --> npm i kurabiliriz , güncelleyebilirz
 <br> npm i -g yarn --> deyip yarn 'ı kurabiliriz , güncelleyebiliriz
-<br> yarn -v
+<br> yarn -v -->  yarn'ın ın  en son sürümüne bakabiliriz
