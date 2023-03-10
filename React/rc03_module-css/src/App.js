@@ -1,7 +1,10 @@
 import Card from "./component/card/Card";
 import data from "./util/data";
-// datayı da import ettik cünkü datamızı buraya cekme işlmi yapabilmek için yaptık 
+//? datayı da import ederek verilerimizin hepsini buraya çağırmış olduk.
 // Card en son oldugu için parent olayından dolayı burada card ı import ettik 
+
+
+//! DİKKAT ! data yı Card gibi büyük harfle yazmadık çünkü Card bi component ama data bir javascript dosyası içinde verilerimizşn bulunduğu bu yüzden. dyi buyuk yaparsak da hata almayız ama bu bır best pragtist.
 
 
 
@@ -23,4 +26,4 @@ function App() {
 // Burada map fonk ile dedikki datamnın içinde ki verileri al her birini lazım olanlar bana destr yaptık isimlerini verdik bunları getir didedik 
 export default App;
 
-// key={id} yazmamızın sebebi hata almamak içinm id olmasaydı bu sefer index yazıp key={index } yazardık console da hata almamız için.
+//! key={id} yazmamızın sebebi hata almamak içinm id olmasaydı bu sefer index yazıp key={index } yazardık console da hata almamamız için.
