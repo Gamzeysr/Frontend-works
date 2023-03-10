@@ -10,7 +10,7 @@ function App() {
   return (
     //!JSX alanında yapıyoruz dikkat et 
     <>
-      {/* JSX alanında işlem yaptıgımız için süslü parantez içine alıyoruz javascript klodunu */}
+      {/* JSX alanında işlem yaptıgımız için süslü parantez içine alıyoruz javascript kodunu */}
       {/* arrow func da unutma ittemden sonra süslü varsa return vardır. */}
       {data.map((item) => {
         console.log(item);
