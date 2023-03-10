@@ -1,5 +1,4 @@
 import CartStyle from "../scss/card.module.scss";
-import data from "../data";
 //👆 Verimizi bilgileri burada kullanacagımızdan buraya import ettik 
 
 
