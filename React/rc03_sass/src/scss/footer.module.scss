@@ -3,7 +3,7 @@
 // bu dosyamı da footer.jsx e import edicem oraya götrcem. 
 
 .footer {
-    background-color: $Paleta-1-5-hex;
+    background-color: $olive;
     position: fixed;
     bottom: 0;
     //!👆 footer ı position:fixed ve bottom vererek sayfanın en altına yapıştırmış olduk 
@@ -19,3 +19,5 @@
         //!👆 text allign ilede yazıyı ortaladık 
     }
 }
+
+//**✨ nested yapı yanı (footerın içindeki title diyebiliruz cunku sass ortamındayız)
