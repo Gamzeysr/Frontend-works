@@ -6,6 +6,7 @@ import CardStyle from './card.module.css';
 
 const Card = ({ language, btn, img }) => {
     // console.log({props});
+    verilerimizi
     return (
         <div  >
             <h1 className={CardStyle["title"]}>{language}</h1>
