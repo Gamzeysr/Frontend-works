@@ -12,8 +12,8 @@
     .card {
         padding: 1.5rem;
         border-radius: 1rem;
-        box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.7);
-        margin: 1.5rem;
+        box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.7);
+        margin: 1.5rem auto;
         max-width: 300px;
 
         img {
@@ -47,7 +47,7 @@
             }
 
             &--large {
-                background-color: $Paleta-1-2-hex;
+                background-color: $lightGreen;
                 padding: 0.7rem;
             }
 
