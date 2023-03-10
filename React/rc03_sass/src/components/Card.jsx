@@ -4,7 +4,7 @@ import data from "../data";
 
 
 
-const Card = () => {
+const Card = ({ data }) => {
   // console.log(data);
   return <div className={CartStyle.container}>
     {data.map((item) => {
