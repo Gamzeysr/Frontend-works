@@ -15,7 +15,7 @@ class Counter extends Component {
     constructor(props) {
         super(props);
 
-        //! count state'ine baslangic degeri atadik
+        //! count state'ine baslangic degeri verdik
         this.state = {
             count: props.count || 0,
         };
@@ -27,30 +27,37 @@ class Counter extends Component {
             count: this.state.count + 1,
         });
     }
+    //! 👆değişkene this.state.count ile erişebiliriz dye bu sekilde yaptık.
+    //!!!!!!! DİKKAT!! Bir dikkat etmemiz gereken de bu methodu bu sekilde arrow func yazmadıgımız için bind ederek bagladık ama arrow func ile kullansaydık bin etmemize gerek kalmayacakdı onu de decrement methodu nu kullanarak yapmış olduk :) 
 
     //! Yazmis oldugumuz metotlar default olarak classa baglanmaz.
     //! Ancak, React built-in fonksiyonlari baglidir.
 
-    //* Bunun icin metotlarimizi ya constructor icerisinde baglamaliyiz yada otomatik baglamayi saglayan arrow fonksiyonlarini kullanmaliyiz.
+    //! 👇otomatik bind yapıyor arrow func ile yaptıgımız için 
     decrement = () => {
         this.setState({
             count: this.state.count - 1,
         });
     };
+    //! DİKKAT!! increment ve decrement methodunu constructorun dışına yazıyoruz UNUTMA bu önemli 
 
     render() {
         return (
             <div className="container text-center mt-4">
                 <h1>CLASSFUL COMPONENTS</h1>
                 <h2 className="display-4 text-danger">COUNT:{this.state.count}</h2>
+                {/* count sayacına erşmek için {this.state.count} yazdık 👆 fonnk read yapmış olduk burada */}
                 <button onClick={this.increment} className="btn btn-success">
                     INC
                 </button>
+
+
 
                 <button onClick={this.decrement} className="btn btn-danger">
                     DEC
                 </button>
             </div>
+            // INC ve DEC butonunda ise fonk atama yaptık 
         );
     }
 }
