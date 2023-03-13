@@ -29,6 +29,7 @@ const Events = () => {
 
     return (
         <div className="container text-center mt-4">
+            {/* eger event fonksıyonun parametresı olması gerekmiyorsa direk bu sekilde cagırabiliriz👇 */}
             <h1>{message}</h1>
             <button onClick={handleClick} className="btn btn-success">
                 Click
@@ -36,7 +37,7 @@ const Events = () => {
 
             {/* Eger bir event fonksiyonunun paremetresi olmasi gerekiyorsa
       bu fonksiyon bir arrow fonks. tarafindan  cagrilmalidir. Aksi
-      takdirde event fonksiyonu event gerceklesmeden cagirilir */}
+      takdirde event fonksiyonu event gerceklesmeden cagirilir 👇*/}
             <button
                 onClick={() => handleClear("Clear Btn Clicked")}
                 className="btn btn-dark"
@@ -44,6 +45,9 @@ const Events = () => {
                 Clear
             </button>
 
+
+
+            {/* eventlarda sadece bu sekilde yapabilirz yoksa ikinci örnekde ki gibi yapmalıyız. eventlarda bu sekilde yapıp hata almamamızın sebebi eventların kendi parametlerinin olması.  */}
             <button onClick={handleChange} className="btn btn-danger">
                 Change
             </button>
