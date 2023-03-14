@@ -19,6 +19,8 @@ class Counter extends Component {
         //! count state'ine baslangic degeri verdik
         this.state = {
             count: props.count || 0,
+            //!👆 Burada props.count yaparak propsdan gelen countu kullan demiş oldum
+            //! counta deger verilmeyen bı durumda sıfıra aktarılsın dıye bu sekilde count: props.count || 0, yazıyoruz 
         };
         //? increment metodunun Counter class'ina baglanmasi (bind)
         this.increment = this.increment.bind(this);
