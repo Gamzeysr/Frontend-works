@@ -12,6 +12,7 @@
 import { Component } from "react";
 
 class Counter extends Component {
+    //! class componentte state kullanmam gerekirse mutlaka constructer ı kullanıcm 👇
     constructor(props) {
         super(props);
 
