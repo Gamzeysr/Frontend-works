@@ -70,6 +70,7 @@ const UseStateCounter = () => {
         <button onClick={() => setCount(0)} className="btn btn-dark">
           CLR
         </button>
+
         {/* 👆bu sekilde CLR butonuna basıldıgında setCount methodunu sıfırla demiş olduk  */}
         {/* <button onClick={dec} className="btn btn-danger">
         DEC
