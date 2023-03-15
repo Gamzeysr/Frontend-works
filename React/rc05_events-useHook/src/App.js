@@ -1,6 +1,6 @@
 import Events from "./components/1-events/Events";
 import Counter from "./components/2-classComponent/Counter";
-// import UseStateCounter from "./components/3-useStateHook/UseStateCounter";
+import UseStateCounter from "./components/3-useStateCounter/UseStateCounter";
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Counter />
       <Counter count={5} />
 
-      {/* <UseStateCounter />  */}
+      <UseStateCounter />
     </div>
   );
 }
