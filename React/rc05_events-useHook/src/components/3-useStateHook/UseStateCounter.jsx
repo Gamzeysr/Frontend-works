@@ -28,18 +28,19 @@ const UseStateCounter = () => {
   //?  2.si ise state'i degistirmeye izin veren bir setter metodudur.
   //? useState parametre olarak state'in ilk degerini alir.
 
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
   //? 👆useState hooku array döndürüyor
 
-  // const [person, setPerson] = useState({
-  //   name: "John",
-  //   surname: "Doe",
-  //   age: 43,
-  // });
+  const [person, setPerson] = useState({
+    name: "John",
+    surname: "Doe",
+    age: 43,
+  });
+  // 👆bu sefer onject olucagı için stateım baslangıca süslü b-parantez verdik 
 
-  const inc = () => {
-    setCount(count + 1);
-  };
+  // const inc = () => {
+  //   setCount(count + 1);
+  // };
 
   // const dec = () => {
   //   if (count > 0) {
@@ -47,20 +48,20 @@ const UseStateCounter = () => {
   //   }
   // };
 
-  // const incAge = () => {
-  //   //?Bu sekilde bir atama ile sayisal deger state'in uzerine yazilmis oldu.
-  //   //? Dolayisiyla obje yapisi bozuldu.
-  //   // setPerson(person.age + 1);
-  //   // setPerson({ name: "Ahmet", surname: "Can", age: 44 });
+  const incAge = () => {
+    //   //?Bu sekilde bir atama ile sayisal deger state'in uzerine yazilmis oldu.
+    //   //? Dolayisiyla obje yapisi bozuldu.
+    // setPerson(person.age + 1);
+    // setPerson({ name: "Ahmet", surname: "Can", age: 44 });
 
-  //   setPerson({ ...person, age: person.age + 1 });
-  // };
+    setPerson({ ...person, age: person.age + 1 });
+  };
 
   // console.log(person);
 
   return (
     <div className="container text-center mt-4">
-      <section>
+      {/* <section>
         <h1>USESTATE HOOK</h1>
         <h2 className="display-4 text-danger">COUNT:{count}</h2>
         <button onClick={inc} className="btn btn-success">
@@ -72,18 +73,18 @@ const UseStateCounter = () => {
         </button>
 
         {/* 👆bu sekilde CLR butonuna basıldıgında setCount methodunu sıfırla demiş olduk  */}
-        {/* <button onClick={dec} className="btn btn-danger">
+      {/* <button onClick={dec} className="btn btn-danger">
         DEC
       </button> */}
-        <button
+      {/* <button
           onClick={() => count > 0 && setCount(count - 1)}
           className="btn btn-danger"
         >
           DEC
         </button>
         {/* 👆DEC İNLİNE OLRAK ki hali  */}
-      </section>
-      {/* <section>
+      {/* </section>  */}
+      <section>
         <h1>USESTATE OBJECT</h1>
         <h2>{person.name}</h2>
         <h2>{person.surname}</h2>
@@ -91,7 +92,7 @@ const UseStateCounter = () => {
         <button onClick={incAge} className="btn btn-info">
           inc age
         </button>
-      </section> */}
+      </section>
     </div>
   );
 };
