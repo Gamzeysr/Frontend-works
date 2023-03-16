@@ -36,7 +36,7 @@ const UseStateCounter = () => {
     surname: "Doe",
     age: 43,
   });
-  // 👆bu sefer onject olucagı için stateım baslangıca süslü b-parantez verdik 
+  // 👆bu sefer object olucagı için stateım baslangıca süslü b-parantez verdik 
 
   // const inc = () => {
   //   setCount(count + 1);
