@@ -9,6 +9,7 @@ const Form = () => {
     e.preventDefault();
     console.log(e.target);
     console.log("Submitted");
+    //! 👇submit ettiğimde inputtaki verilerimi görmek için statelerimizi çağırdık.
     alert(`username: ${username}
           email:${email},
           password:${password}
@@ -37,6 +38,7 @@ const Form = () => {
           id="username"
           value={username}
           onChange={handleUsername}
+        //! inputa girdiğim her karakter handleUsername sayesinde hamdleUsername fonksyonuna gidip calısyor.
         />
       </div>
       <div className="mb-3">
