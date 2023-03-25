@@ -11,9 +11,11 @@ const Form = () => {
     console.log("Submitted");
     //! 👇submit ettiğimde inputtaki verilerimi görmek için statelerimizi çağırdık.
     alert(`username: ${username}
-          email:${email},
+          email:${email}
           password:${password}
+    
     `);
+    // !👆 ben buradaki ${ username },${ email },${ password } değşkenlerini artık burada istediğim yerde kullanabilirm.
     setUsername("");
     setEmail("");
     setPassword("");
@@ -31,17 +33,20 @@ const Form = () => {
       <div className="mb-3">
         <label htmlFor="username" className="form-label">
           Username: <span className="text-danger">{username}</span>
+          {/*   👆 buda state'im  */}
         </label>
+        {/* 👆mesela yukarıdaki ${username} değişkenini ben burada kullanmak istedim ve kullandıkm  */}
         <input
           type="text"
           className="form-control"
           id="username"
           value={username}
+          // 👆bu benim statim.
           onChange={handleUsername}
         //! inputa girdiğim her karakter handleUsername sayesinde hamdleUsername fonksyonuna gidip calısyor.
         />
       </div>
-      <div className="mb-3">
+      {/* <div className="mb-3">
         <label htmlFor="email" className="form-label">
           Email: <span className="text-danger">{email}</span>
         </label>
@@ -64,7 +69,7 @@ const Form = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-      </div>
+      </div> */}
 
       <button type="submit" className="btn btn-primary">
         Submit
