@@ -1,3 +1,6 @@
+
+//! stateleri tek tek yazmak yerine tek bir seferde buradakiler gibi yapabilirz 
+
 import { useState } from "react";
 
 const FormObject = () => {
