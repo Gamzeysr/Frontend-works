@@ -15,7 +15,7 @@ const Form = () => {
           password:${password}
     
     `);
-    // !👆 ben buradaki ${ username },${ email },${ password } değşkenlerini artık burada istediğim yerde kullanabilirm.
+    // !👆 ben buradaki ${ username },${ email },${ password } burada kullanmamın sebebi sayfa submit edildiğinde inputlara girilen değerler ne ise onu göstersin diye yaptık
     setUsername("");
     setEmail("");
     setPassword("");
