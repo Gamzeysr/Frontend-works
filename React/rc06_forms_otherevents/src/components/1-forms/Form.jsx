@@ -20,6 +20,7 @@ const Form = () => {
     setEmail("");
     setPassword("");
   };
+  //!👆 submit edildiğin de inputtaki veriler silinsin istediğimiz için bu üçünü koyduk. 
 
   const handleUsername = (e) => {
     console.log(e.target.value);
@@ -47,7 +48,7 @@ const Form = () => {
         //! inputa girdiğim her karakter handleUsername sayesinde hamdleUsername fonksyonuna gidip calısyor.
         />
       </div>
-      {/* <div className="mb-3">
+      <div className="mb-3">
         <label htmlFor="email" className="form-label">
           Email: <span className="text-danger">{email}</span>
         </label>
@@ -70,7 +71,7 @@ const Form = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-      </div> */}
+      </div>
 
       <button type="submit" className="btn btn-primary">
         Submit
