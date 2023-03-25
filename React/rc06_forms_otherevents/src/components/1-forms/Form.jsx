@@ -25,6 +25,7 @@ const Form = () => {
     console.log(e.target.value);
     setUsername(e.target.value);
   };
+  //!👆DİKKAT Onchangi de input a girilen değerleri ekranda görülmesi için kullanıyoruz.
 
   return (
     <form onSubmit={handleSubmit}>
