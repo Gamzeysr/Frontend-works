@@ -32,6 +32,7 @@ const FormObject = () => {
         console.log(e.target.id);
         setFormValues({ ...formValues, [e.target.id]: e.target.value });
     };
+    //! bu sekilde actım çünkü 3 stateim var aslında ama ben kolaylık olsun dıye tek bir hookda topladım o yüzden 
 
     return (
         <form onSubmit={handleSubmit}>
