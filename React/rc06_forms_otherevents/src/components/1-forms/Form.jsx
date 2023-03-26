@@ -43,7 +43,7 @@ const Form = () => {
           className="form-control"
           id="username"
           value={username}
-          // 👆bu benim statim.
+          // 👆bu benim statim.yani buraya yazılan değeri nerede istersem oraya gönderebiliyorum
           onChange={handleUsername}
         //! inputa girdiğim her karakter handleUsername sayesinde hamdleUsername fonksyonuna gidip calısyor.
         />
