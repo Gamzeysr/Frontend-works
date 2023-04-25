@@ -15,6 +15,7 @@ function App() {
         <Route path="/instructors" element={<Instructors />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
+        {/* * 👆bu durumda ki ifade en altta bulunmalı en basa koysaydık o zaman hemen notfoun a yönlendirirdi .  */}
       </Routes>
       <Footer />
     </BrowserRouter>
