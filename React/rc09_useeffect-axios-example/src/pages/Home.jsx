@@ -8,9 +8,15 @@ const Home = () => {
     const url = "https://63f7293ee8a73b486af1c260.mockapi.io/api/tasks";
 
     const getTutorials = async () => {
-        const { data } = await axios(url);
-        console.log(data)
-        setTutorials(data);
+        try {
+            const { data } = await axios(url);
+            console.log(data)
+            setTutorials(data);
+        } catch (error) {
+            console.log(error)
+        }
+
+
     }
 
 
