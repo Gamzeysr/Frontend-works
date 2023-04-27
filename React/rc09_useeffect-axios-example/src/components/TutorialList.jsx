@@ -1,20 +1,7 @@
 import { FaEdit } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
 
-const TutorialList = () => {
-    const tutorials = [
-        {
-            id: 1,
-            title: "JS",
-            description: "JS is a programming language",
-        },
-        {
-            id: 2,
-            title: "React",
-            description: "JS library for UI design",
-        },
-    ];
-
+const TutorialList = ({ tutorials }) => {
     return (
         <div className="container mt-4">
             <table className="table table-striped">
@@ -30,12 +17,12 @@ const TutorialList = () => {
                 </thead>
                 <tbody>
                     {tutorials?.map((item) => {
-                        const { id, title, description } = item;
+                        const { id, task, date } = item;
                         return (
-                            <tr key={id}>
+                            <tr key={task}>
                                 <th>{id}</th>
-                                <td>{title}</td>
-                                <td>{description}</td>
+                                <td>{task}</td>
+                                <td>{date}</td>
                                 <td className="text-center text-nowrap">
                                     <FaEdit
                                         size={20}
