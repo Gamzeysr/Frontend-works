@@ -3,10 +3,10 @@ import axios from "axios";
 
 const AddTutorial = () => {
     const [title, setTitle] = useState("");
-    const [desc, setDesc] = useState("");
+    const [description, setDescription] = useState("");
 
     const handleSubmit = (e) => {
-        const newTutor = { title, desc };
+        const newTutor = { title, description };
         AddTutorial(newTutor);
     };
     const addTutorial = async (newTutor) => {
@@ -45,8 +45,8 @@ const AddTutorial = () => {
                         className="form-control"
                         id="desc"
                         placeholder="Enter your Description"
-                        value={desc}
-                        onChange={(e) => setDesc(e.target.value)}
+                        value={setDescription}
+                        onChange={(e) => setDescription(e.target.value)}
                         required
                     />
                 </div>
