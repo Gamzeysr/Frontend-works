@@ -6,11 +6,14 @@ const AddTutorial = () => {
     const [description, setDescription] = useState("");
 
     const handleSubmit = (e) => {
+        e.preventDefault();
         const newTutor = { title, description };
-        AddTutorial(newTutor);
+        addTutorial(newTutor);
+        setTitle("");
+        setDescription("");
     };
     const addTutorial = async (newTutor) => {
-        const url = "https://axios-example-cw.herokuapp.com/api/tutorials";
+        const url = "https://63f7293ee8a73b486af1c260.mockapi.io/api/tasks";
         try {
             await axios.post(url, newTutor);
         } catch (error) {
@@ -45,7 +48,8 @@ const AddTutorial = () => {
                         className="form-control"
                         id="desc"
                         placeholder="Enter your Description"
-                        value={setDescription}
+                        value={description}
+
                         onChange={(e) => setDescription(e.target.value)}
                         required
                     />
