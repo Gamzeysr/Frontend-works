@@ -17,12 +17,15 @@ const TutorialList = ({ tutorials }) => {
                 </thead>
                 <tbody>
                     {tutorials?.map((item) => {
-                        const { id, task, date } = item;
+                        const { id, task, date, title, description } = item;
                         return (
                             <tr key={task}>
                                 <th>{id}</th>
-                                <td>{task}</td>
+                                <td>{title}</td>
                                 <td>{date}</td>
+
+                                <td>{description}</td>
+
                                 <td className="text-center text-nowrap">
                                     <FaEdit
                                         size={20}

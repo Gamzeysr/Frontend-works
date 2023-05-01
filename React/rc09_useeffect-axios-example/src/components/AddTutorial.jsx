@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const AddTutorial = () => {
+const AddTutorial = ({ getTutorials }) => {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
 
@@ -12,14 +12,24 @@ const AddTutorial = () => {
         setTitle("");
         setDescription("");
     };
+
+
+
     const addTutorial = async (newTutor) => {
         const url = "https://63f7293ee8a73b486af1c260.mockapi.io/api/tasks";
         try {
             await axios.post(url, newTutor);
+
         } catch (error) {
             console.log(error);
+
+        } finally {
+            getTutorials();
         }
+        // 👆hatayı düşsede düşmesede getTutorials() i hep çağırıyor.  
+
     };
+
 
     return (
         <div className="container text-center mt-4">
