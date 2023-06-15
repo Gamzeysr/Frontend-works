@@ -33,7 +33,9 @@ const Home = () => {
     return (
         <>
             <AddTutorial getTutorials={getTutorials} />
+            {/* hem get hem de post işlemini yaptıgı için getTutorials'u AddTutorial componentine gönderiyoruz. */}
             <TutorialList tutorials={tutorials} />
+            {/* bu componenttede sadece get işlemi yaptıgımız için tutorial ı gönderiyoruz  */}
         </>
     );
 };
