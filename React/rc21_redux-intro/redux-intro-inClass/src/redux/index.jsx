@@ -7,12 +7,12 @@
 //   switch (action.type) {
 //     case "INCREMENT":
 //       return { counter: state.counter + 1 };
-//?👆 Burada key value mantıgı var ve burada counterımıza erişmek için statet.counterımızı bir artır demiş olduk 
+//?👆 Burada key value mantıgı var ve burada counterımıza erişmek için statet.counterımızı bir artır demiş olduk
 //     case "DECREMENT":
 //       return { counter: state.counter - 1 };
 //     case "CLEAR":
 //       return initialState;
-// ? 👆Burdada counterımızıı sıfıra dedik aslında initialState diyetere counter :  da diyebilirdik 
+// ? 👆Burdada counterımızıı sıfıra dedik aslında initialState diyetere counter : 0 da diyebilirdik.Aynı şey.
 //     default:
 //       return state;
 //   }
@@ -25,7 +25,7 @@
 //! birden fazla reducer olunca tek bir yerde birleştirmemez gerekiyor.oyüzden baba klasörümüzde birleştiriyoruz.
 
 import { legacy_createStore as createStore, combineReducers } from "redux";
-//! 👆store olusturacak kısmı ekledik buraya 
+//! 👆store olusturacak kısmı ekledik buraya
 //! önceki yaptıgımız işlemde app.jsnin içindeydi oradan sildik buraya ekledik.
 //? Sonrasında da iki tane reducerlarımız vardı. onları buraya cagırdık.👇
 import counterReducer from "./reducers/counterReducer";
@@ -38,6 +38,6 @@ const rootReducer = combineReducers({
   todo: todoReducer,
 });
 //! Şimdi de bu birleştirdiğimiz reducerları store a veriyoruz asagıdaki şekilde  👇
-//? createStore diyerek storumuzu olusturduk.bu store da içine rootReducer i alacak 
+//? createStore diyerek storumuzu olusturduk.bu store da içine rootReducer i alacak
 export const store = createStore(rootReducer);
 //! Bunu artık ben istediğim yerde kullansbilirim
