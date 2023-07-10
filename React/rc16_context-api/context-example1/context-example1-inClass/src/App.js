@@ -10,6 +10,7 @@ import { LoginContext } from "./context/LoginContext";
 import { useState } from "react";
 import PrivateRouter from "./pages/PrivateRouter";
 
+//! 2. aşama Sarmallama aşaması
 function App() {
   const [user, setUser] = useState("");
 
