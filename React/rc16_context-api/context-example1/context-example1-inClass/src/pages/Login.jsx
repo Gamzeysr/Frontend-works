@@ -9,10 +9,12 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   //! local state
   // const [user, setUser] = useState({ email: "", password: "" });
-  //👆 bu local stateimi artık App.js de sarmalladım ve global state yaptgım için local stateimi kullanmıyorum gelen verilerimi artık global state e atıyorum.
+  //TODO👆 bu local stateimi artık App.js de sarmalladım ve global state yaptgım için local stateimi kullanmıyorum gelen verilerimi artık global state e atıyorum.
 
-  //! Consuming LoginContext
+  //!2- Consuming LoginContext
   const { user, setUser } = useContext(LoginContext);
+  //TODO local state yerine artık bu consuming yapıyorum.
+  //TODO👆 LoginContextden user ve setUser verilerimi oku diyorum.
 
   const navigate = useNavigate();
 
