@@ -36,7 +36,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </LoginContext.Provider>
+    // </LoginContext.Provider>
   );
 }
 

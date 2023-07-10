@@ -26,7 +26,7 @@ const Login = () => {
   // ☝Burada navigate(-1) kullanmamızın sebebi : Kullanıcı login yapmadan people a girmiş olabilir. Ve eger kişiyi istediğimiz sayfaya yönlendirmemiz gerekir. Aslında istediği sayfa people sayfasıydı oraya Login girdi. Oyüzden -1 e yönlendirerek people a gitmesiniz sağladık.
   // Yani peopla tıklayınca da Login sayfasına gidecek resimlere ulaşmak için Peoplein bir öncesinde de Login var o yüzden -1 dedik
 
-  console.log(user);
+  // console.log(user);
   return (
     <Container>
       <h1 className="text-center mt-4">LOGIN PAGE</h1>

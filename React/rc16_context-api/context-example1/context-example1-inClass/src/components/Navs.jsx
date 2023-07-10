@@ -47,6 +47,7 @@ function Navs() {
               >
                 Logout
               </Link>
+              //! Burada demiş olduk ki user bilgisiyıoksa email yoksa Logini göster eger varsa logoutu göster demiş olduk.
             )}
           </Nav>
         </Navbar.Collapse>
