@@ -30,7 +30,7 @@ function App() {
             <Route path="" element={<People />} />
             <Route path=":id" element={<PersonDetail />} />
           </Route>
-          Absolute path kullanmadıgımız için önce people dedik sonra
+          {/* Absolute path kullanmadıgımız için önce people dedik sonra */}
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
