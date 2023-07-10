@@ -21,7 +21,7 @@
 // ✨Buraya kadar reducer ımız oluyor.👆
 //? Bu reducer metodumuz içine parametre olarak stateimizi ve actionu alıyor.Sonra bir durum makinesi old için switch case yapısıyla actionların türüne göre karar veriyor.Sonrasında INCREMENT DECREMENT CLEAR isimlerini verdik şimdi bu ICREMENT DECREMENT CLEAR durumlarında statelerimizin durumlarını ayarlayacagız.
 
-//!DİKKAT UNUTMA !! reducer methodu bir state alır bırde o stateleri değiştirecek olan actionları alır.👉const reducer = (state = initialState, action)
+//!DİKKAT UNUTMA !! reducer methodu bir state alır bırde o stateleri değiştirecek olan actionları alır.👉const reducer = (state = initialState, action),daha sonrasında actionların içinde ki türlere bakıp
 
 //! Burada reducerlarımızı birleştirip tek bir elden vermemiz gerekiyor.STOORE mantıgını düşün 👇Yani reducerlarımızı combine etmemiz gerekiyor.
 //! birden fazla reducer olunca tek bir yerde birleştirmemez gerekiyor.oyüzden baba klasörümüzde birleştiriyoruz.
