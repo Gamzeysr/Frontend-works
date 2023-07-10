@@ -14,7 +14,7 @@ const Login = () => {
   //!2- Consuming LoginContext
   const { user, setUser } = useContext(LoginContext);
   //TODO local state yerine artık bu consuming yapıyorum.
-  //TODO👆 LoginContextden user ve setUser verilerimi oku diyorum.
+  //TODO👆 LoginContextden user ve setUser verilerimi oku veya yaz demiş oluyorum.
 
   const navigate = useNavigate();
 
