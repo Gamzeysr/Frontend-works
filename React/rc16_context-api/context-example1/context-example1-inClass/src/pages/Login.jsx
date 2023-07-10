@@ -11,7 +11,8 @@ const Login = () => {
   // const [user, setUser] = useState({ email: "", password: "" });
   //TODO👆 bu local stateimi artık App.js de sarmalladım ve global state yaptgım için local stateimi kullanmıyorum gelen verilerimi artık global state e atıyorum.
 
-  //!2- Consuming LoginContext
+  //!3- Consuming LoginContext
+  // Bu kısım artık tüketme SON AŞAMA 👇
   const { user, setUser } = useContext(LoginContext);
   //TODO local state yerine artık bu consuming yapıyorum.
   //TODO👆 LoginContextden user ve setUser verilerimi oku veya yaz demiş oluyorum.
